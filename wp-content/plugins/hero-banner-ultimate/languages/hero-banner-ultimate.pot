@@ -1,0 +1,464 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Hero Banner Ultimate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-14 06:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:346
+msgid " Range: 0 to 1"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:206
+msgid " Range: 0 to 100"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:279
+#: includes/admin/metabox/hbu-post-sett-metabox.php:283
+#: includes/admin/metabox/hbu-post-sett-metabox.php:289
+#: includes/admin/metabox/hbu-post-sett-metabox.php:293
+msgid "100px OR 30%"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:245
+msgid "1024"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:265
+msgid "18"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:255
+msgid "30"
+msgstr ""
+
+#: includes/hbu-post-types.php:22
+msgid "Add Hero Banner"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Add hero banner with the help of background image OR background color OR "
+"background video. Also work with Gutenberg shortcode block."
+msgstr ""
+
+#: includes/hbu-post-types.php:23
+msgid "Add New Hero Banner"
+msgstr ""
+
+#: includes/hbu-functions.php:53
+msgid "Azure"
+msgstr ""
+
+#: includes/hbu-functions.php:32
+msgid "Background Color"
+msgstr ""
+
+#: includes/hbu-functions.php:33
+msgid "Background Color and Image"
+msgstr ""
+
+#: includes/hbu-functions.php:34
+msgid "Background Image"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:184
+msgid "Background Image Attachment"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:203
+msgid "Background Image Left & Right Position"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:165
+msgid "Background Image Size"
+msgstr ""
+
+#: includes/hbu-functions.php:35
+msgid "Background Video"
+msgstr ""
+
+#: includes/hbu-functions.php:36
+msgid "Background Video and Image"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:130
+msgid "Banner Background Color"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:303
+msgid "Banner Color Setting"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:273
+msgid "Banner Inner Padding"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:242
+msgid "Banner Inner Wrap Width"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:334
+msgid "Banner Overlay Color"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:343
+msgid "Banner Overlay Opacity"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:329
+msgid "Banner Overlay Setting"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:236
+msgid "Banner Setting"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:103
+msgid "Banner Type"
+msgstr ""
+
+#: includes/hbu-functions.php:50
+msgid "Black"
+msgstr ""
+
+#: includes/hbu-functions.php:64
+msgid "Blue"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:290
+msgid "Bottom"
+msgstr ""
+
+#: includes/hbu-functions.php:58
+msgid "Bright Yellow"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:373
+msgid "Button - 1 Class"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:363
+msgid "Button - 1 Link"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:355
+msgid "Button - 1 Name"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:409
+msgid "Button - 2 Class"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:399
+msgid "Button - 2 Link"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:391
+msgid "Button - 2 Name"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:352
+msgid "Call to Action Setting"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:151
+msgid "Clear"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:318
+msgid "Content Color"
+msgstr ""
+
+#: includes/hbu-functions.php:59
+msgid "Cyan"
+msgstr ""
+
+#: includes/hbu-functions.php:62
+msgid "Dark Magenta"
+msgstr ""
+
+#: includes/hbu-post-types.php:24
+msgid "Edit Hero Banner"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:226
+msgid "eg. 187799034"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:218
+msgid "eg. wuY3TAeixus"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:246
+msgid "Enter banner inner warp width in PX"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:367
+#: includes/admin/metabox/hbu-post-sett-metabox.php:403
+msgid "Enter button link url ie https://www.wponlinesupport.com."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:359
+#: includes/admin/metabox/hbu-post-sett-metabox.php:395
+msgid "Enter button name."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:266
+msgid "Enter sub title font size in PX"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:256
+msgid "Enter title font size in PX"
+msgstr ""
+
+#: includes/hbu-functions.php:52
+msgid "Gray"
+msgstr ""
+
+#: includes/hbu-functions.php:57
+msgid "Green"
+msgstr ""
+
+#: includes/hbu-post-types.php:20 includes/hbu-post-types.php:21
+#: includes/hbu-post-types.php:31
+msgid "Hero Banner"
+msgstr ""
+
+#: includes/admin/class-hbu-admin.php:69
+msgid "Hero Banner - Settings"
+msgstr ""
+
+#. Name of the plugin
+msgid "Hero Banner Ultimate"
+msgstr ""
+
+#: includes/admin/premium.php:15
+msgid "Hero Banner Ultimate :- Features"
+msgstr ""
+
+#. Author URI of the plugin
+#: includes/admin/metabox/hbu-post-sett-metabox.php:365
+#: includes/admin/metabox/hbu-post-sett-metabox.php:401
+msgid "https://www.wponlinesupport.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://www.wponlinesupport.com/plugins"
+msgstr ""
+
+#: includes/hbu-functions.php:84
+msgid "Layout 1"
+msgstr ""
+
+#: includes/hbu-functions.php:85
+msgid "Layout 2"
+msgstr ""
+
+#: includes/hbu-functions.php:86
+msgid "Layout 3"
+msgstr ""
+
+#: includes/hbu-functions.php:87
+msgid "Layout 4"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:294
+msgid "Left"
+msgstr ""
+
+#: includes/hbu-functions.php:66
+msgid "Lime"
+msgstr ""
+
+#: includes/hbu-functions.php:69
+msgid "Lime Green"
+msgstr ""
+
+#: includes/hbu-functions.php:65
+msgid "Magenta"
+msgstr ""
+
+#: includes/hbu-functions.php:63
+msgid "Moderate Blue"
+msgstr ""
+
+#: includes/hbu-functions.php:54
+msgid "Moderate Green"
+msgstr ""
+
+#: includes/hbu-functions.php:56
+msgid "Moderate Red"
+msgstr ""
+
+#: includes/hbu-functions.php:61
+msgid "Moderate Violet"
+msgstr ""
+
+#: includes/hbu-post-types.php:25
+msgid "New Hero Banner"
+msgstr ""
+
+#: includes/hbu-post-types.php:28
+msgid "No Hero Banner found"
+msgstr ""
+
+#: includes/hbu-post-types.php:29
+msgid "No Hero Banner found in trash"
+msgstr ""
+
+#: includes/hbu-functions.php:60
+msgid "Orange"
+msgstr ""
+
+#: includes/hbu-functions.php:67
+msgid "Pink"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:357
+#: includes/admin/metabox/hbu-post-sett-metabox.php:393
+msgid "Read More"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:284
+msgid "Right"
+msgstr ""
+
+#: includes/hbu-post-types.php:27
+msgid "Search Hero Banner"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:197
+msgid "Select bacground image attachment."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:178
+msgid "Select bacground image size."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:134
+msgid "Select banner background color."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:84
+msgid "Select Banner Layout"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:97
+msgid "Select banner layout"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:338
+msgid "Select banner overlay background color."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:386
+#: includes/admin/metabox/hbu-post-sett-metabox.php:422
+msgid "Select button class."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:322
+msgid "Select content font color."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:116
+msgid "Select on click type ie where user going to click."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:312
+msgid "Select title color."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:207
+msgid "Set the background image position level. Range: 0 to 100 in %."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:347
+msgid "Set the overlay opacity level. Range: 0 to 1."
+msgstr ""
+
+#: includes/admin/class-hbu-admin.php:168
+msgid "Shortcode"
+msgstr ""
+
+#: includes/hbu-functions.php:55
+msgid "Soft Red"
+msgstr ""
+
+#: includes/class-hbu-script.php:107
+msgid "Sorry, One entry should be there."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:262
+msgid "Sub Title Font Size"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:308
+msgid "Title Color"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:252
+msgid "Title Font Size"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:280
+msgid "Top"
+msgstr ""
+
+#: includes/admin/class-hbu-admin.php:48
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: includes/admin/class-hbu-admin.php:48
+msgid "Upgrade to PRO - Hero Banner Ultimate"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:152
+msgid "Upload banner button image."
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:150
+msgid "Upload Image"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:216
+msgid "Video Url"
+msgstr ""
+
+#: includes/hbu-post-types.php:26
+msgid "View Hero Banner"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:228
+msgid "vimeo eg 187799034"
+msgstr ""
+
+#: includes/hbu-functions.php:68
+msgid "Vivid Yellow"
+msgstr ""
+
+#: includes/hbu-functions.php:51
+msgid "White"
+msgstr ""
+
+#. Author of the plugin
+msgid "WP OnlineSupport"
+msgstr ""
+
+#: includes/hbu-functions.php:70
+msgid "Yellow"
+msgstr ""
+
+#: includes/admin/metabox/hbu-post-sett-metabox.php:220
+msgid "You Tube eg wuY3TAeixus"
+msgstr ""
