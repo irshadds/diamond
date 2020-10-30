@@ -7751,8 +7751,7 @@ body:not(.home).dark-version,
 }
 
 .facetwp-radio {
-	background: none;
-    background-image: none;
+    background-image: none !important;
     background-color: #fff;
     border-style: solid;
     border-radius: 50px;
@@ -7761,38 +7760,59 @@ body:not(.home).dark-version,
     padding: 5px;
     display: inline-block;
     margin: 5px;
-    width: 30%;
+    width: calc(33.3% - 10px);
     color: #1c0d69;
 }
 
-.facetwp-radio.checked {
-	
-	background: none;
-    background-image: none;
-    background-color: #1c0d69;
-    color: #fff;
-    border-radius: 50px;
-    width: 30%;
-}
-
+.facetwp-radio.checked,
 .facetwp-radio:hover {
-	
-	background: none;
-    background-image: none;
     background-color: #1c0d69;
-    color: #fff;
-    border-radius: 50px;
-    width: 30%;
+    color: #fff;    
 }
 
+.facetwp-dropdown,
 .facetwp-type-dropdown{
-
-	width:10%;
-
+	max-width: 100%
+	width: calc(33.3% - 10px);
 	display: inline-block;
 
 }
 
 .facetwp-counter {
     display: none;
+}
+
+@media screen and (max-width: 32rem){
+  .facetwp-radio,
+  .facetwp-dropdown,
+  .facetwp-type-dropdown{
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+.ctis-load-more{
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: 0.01em;
+    position: relative;
+    text-align: center;
+    background-color: #e5f8fc;
+    border: 2px solid #e5f8fc;
+	color: #1c0d69;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.ctis-load-more:hover,
+.ctis-load-more:focus {
+	background-color: #1c0d69;
+	border-color: #1c0d69;
+	color: #fff;
 }
