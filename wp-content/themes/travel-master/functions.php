@@ -367,7 +367,7 @@ function custom_post_type() {
 	    'search_items'       => __( 'Search Recipes' ),
 	    'not_found'          => __( 'No recipes found' ),
 	    'not_found_in_trash' => __( 'No recipes found in the Trash' ), 
-	    'parent_item_colon'  => ’,
+	    'parent_item_colon'  => '',
 	    'menu_name'          => 'Recipes'
     );
      
@@ -478,7 +478,7 @@ function custom_brand_type() {
 	    'search_items'       => __( 'Search Brands' ),
 	    'not_found'          => __( 'No Brands found' ),
 	    'not_found_in_trash' => __( 'No Brands found in the Trash' ), 
-	    'parent_item_colon'  => ’,
+	    'parent_item_colon'  => '',
 	    'menu_name'          => 'Brands'
     );
      
@@ -542,7 +542,7 @@ function custom_blog_type() {
 	    'search_items'       => __( 'Search Blogs' ),
 	    'not_found'          => __( 'No Blogs found' ),
 	    'not_found_in_trash' => __( 'No Blog found in the Trash' ), 
-	    'parent_item_colon'  => ’,
+	    'parent_item_colon'  => '',
 	    'menu_name'          => 'Blog'
     );
      
