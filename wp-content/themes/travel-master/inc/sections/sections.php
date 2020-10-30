@@ -13,7 +13,7 @@
 require get_template_directory() . '/inc/sections/slider.php';
 
 // trip search section
-// require get_template_directory() . '/inc/sections/trip-search.php';
+require get_template_directory() . '/inc/sections/trip-search.php';
 
 // featured section
 require get_template_directory() . '/inc/sections/featured.php';
@@ -27,7 +27,7 @@ require get_template_directory() . '/inc/sections/about.php';
 
 
 // service section
-// require get_template_directory() . '/inc/sections/service.php';
+require get_template_directory() . '/inc/sections/service.php';
 
 // popular destination section
 require get_template_directory() . '/inc/sections/popular-destination.php';
@@ -35,4 +35,4 @@ require get_template_directory() . '/inc/sections/popular-destination.php';
 
 
 // discover places section
-// require get_template_directory() . '/inc/sections/discover-places.php';
+require get_template_directory() . '/inc/sections/discover-places.php';

@@ -133,7 +133,7 @@ function travel_master_customize_register( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/sections/slider.php';
 
 	// load trip search option
-	// require get_template_directory() . '/inc/customizer/sections/trip-search.php';
+	require get_template_directory() . '/inc/customizer/sections/trip-search.php';
 
 	// load featured option
 	require get_template_directory() . '/inc/customizer/sections/featured.php';
@@ -147,13 +147,13 @@ function travel_master_customize_register( $wp_customize ) {
 	require get_template_directory() . '/inc/customizer/sections/about.php';
 
 	// load service option
-	// require get_template_directory() . '/inc/customizer/sections/service.php';
+	require get_template_directory() . '/inc/customizer/sections/service.php';
 
 	// load blog option
 	require get_template_directory() . '/inc/customizer/sections/blog.php';
 
 	// load discover places option
-	// require get_template_directory() . '/inc/customizer/sections/discover-places.php';
+	require get_template_directory() . '/inc/customizer/sections/discover-places.php';
 
 }
 add_action( 'customize_register', 'travel_master_customize_register' );
