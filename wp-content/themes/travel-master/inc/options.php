@@ -176,6 +176,7 @@ if ( ! function_exists( 'travel_master_sortable_sections' ) ) :
             'slider'                => esc_html__( 'Main Slider', 'travel-master' ),
             'trip_search'           => esc_html__( 'Trip Search', 'travel-master' ),
             'featured'              => esc_html__( 'Featured', 'travel-master' ),
+            'blog'                  => esc_html__( 'Blog', 'travel-master' ),
             'about'                 => esc_html__( 'About Us', 'travel-master' ),
             'popular_destination'   => esc_html__( 'Popular Destination', 'travel-master' ),
             'service'               => esc_html__( 'Services', 'travel-master' ),

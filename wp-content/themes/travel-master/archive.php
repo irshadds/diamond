@@ -16,17 +16,31 @@ Template Name: Archives
 get_header(); 
 ?>
 
+
 <div id="inner-content-wrapper" class="wrapper page-section">
+
     <div id="primary" class="content-area">
+
+    	<?php if (get_post_type() == "recipes") : ?>
+
+    		<?php 	echo do_shortcode( '[facetwp facet="media_type"]' ); ?>
+			<?php 	echo do_shortcode( '[facetwp facet="brand"]' ); ?>
+			<?php 	echo do_shortcode( '[facetwp facet="category"]' ); ?>
+		<?php endif?>
+
         <main id="main" class="site-main" role="main">
-            <div class="archive-blog-wrapper clear col-2">
+            <div class="archive-blog-wrapper clear col-3">
+
+
 				<?php
 
 				
 				if ( have_posts() ) : ?>
 
+
 					<?php
 					/* Start the Loop */
+
 					while ( have_posts() ) : the_post();
 
 						/*
@@ -51,6 +65,8 @@ get_header();
 			* @hooked travel_master_pagination 
 			*/
 			do_action( 'travel_master_action_pagination' ); 
+
+			
 			?>
 		</main><!-- #main -->
 	</div><!-- #primary -->

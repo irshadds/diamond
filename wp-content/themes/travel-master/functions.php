@@ -307,7 +307,7 @@ function travel_master_scripts() {
 	// blocks
 	wp_enqueue_style( 'travel-master-blocks', get_template_directory_uri() . '/assets/css/blocks' . travel_master_min() . '.css' );
 
-	wp_enqueue_style( 'travel-master-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'travel-master-style', get_stylesheet_uri(),rand(111,9999) );
 	
 	// Load the html5 shiv.
 	wp_enqueue_script( 'travel-master-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix' . travel_master_min() . '.js', array(), '20160412', true );
@@ -461,6 +461,134 @@ function my_taxonomies_product() {
   register_taxonomy( 'recipes_product', 'recipes', $args );
 }
 add_action( 'init', 'my_taxonomies_product', 0 );
+
+
+function custom_brand_type() {
+ 
+// Set UI labels for Custom Post Type
+    $labels = array(
+        'name'               => _x( 'Brands', 'post type general name' ),
+	    'singular_name'      => _x( 'Brands', 'post type singular name' ),
+	    'add_new'            => _x( 'Add New', 'brand' ),
+	    'add_new_item'       => __( 'Add New ç' ),
+	    'edit_item'          => __( 'Edit Brand' ),
+	    'new_item'           => __( 'New Brand' ),
+	    'all_items'          => __( 'All Brands' ),
+	    'view_item'          => __( 'View Brand' ),
+	    'search_items'       => __( 'Search Brands' ),
+	    'not_found'          => __( 'No Brands found' ),
+	    'not_found_in_trash' => __( 'No Brands found in the Trash' ), 
+	    'parent_item_colon'  => ’,
+	    'menu_name'          => 'Brands'
+    );
+     
+// Set other options for Custom Post Type
+     
+    $args = array(
+     
+	    'labels'        => $labels,
+	    'description'   => 'Holds our brand and brand specific data',
+	    'public'        => true,
+	    'menu_position' => 5,
+	    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+	    'has_archive'   => true,
+ 
+    );
+     
+    // Registering your Custom Post Type
+    register_post_type( 'brand', $args );
+ 
+}
+
+add_action( 'init', 'custom_brand_type', 0 );
+
+
+function my_taxonomies_brand() {
+  $labels = array(
+    'name'              => _x( 'Product', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Product', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Product' ),
+    'all_items'         => __( 'All Product' ),
+    'parent_item'       => __( 'Parent Product' ),
+    'parent_item_colon' => __( 'Parent Product :' ),
+    'edit_item'         => __( 'Edit Product' ), 
+    'update_item'       => __( 'Update Product' ),
+    'add_new_item'      => __( 'Add New Product' ),
+    'new_item_name'     => __( 'New Product' ),
+    'menu_name'         => __( 'Product' ),
+  );
+  $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+  );
+  register_taxonomy( 'brand_product', 'brand', $args );
+}
+add_action( 'init', 'my_taxonomies_brand', 0 );
+
+
+
+function custom_blog_type() {
+ 
+// Set UI labels for Custom Post Type
+    $labels = array(
+        'name'               => _x( 'Blog', 'post type general name' ),
+	    'singular_name'      => _x( 'Blog', 'post type singular name' ),
+	    'add_new'            => _x( 'Add New', 'blog' ),
+	    'add_new_item'       => __( 'Add New Blog' ),
+	    'edit_item'          => __( 'Edit Blog' ),
+	    'new_item'           => __( 'New Blog' ),
+	    'all_items'          => __( 'All Blog' ),
+	    'view_item'          => __( 'View Blog' ),
+	    'search_items'       => __( 'Search Blogs' ),
+	    'not_found'          => __( 'No Blogs found' ),
+	    'not_found_in_trash' => __( 'No Blog found in the Trash' ), 
+	    'parent_item_colon'  => ’,
+	    'menu_name'          => 'Blog'
+    );
+     
+// Set other options for Custom Post Type
+     
+    $args = array(
+     
+	    'labels'        => $labels,
+	    'description'   => 'Holds our blogs and blog specific data',
+	    'public'        => true,
+	    'menu_position' => 5,
+	    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+	    'has_archive'   => true,
+ 
+    );
+     
+    // Registering your Custom Post Type
+    register_post_type( 'blogs', $args );
+ 
+}
+
+add_action( 'init', 'custom_blog_type', 0 );
+
+function my_taxonomies_Category() {
+  $labels = array(
+    'name'              => _x( 'Category', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Category', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Category' ),
+    'all_items'         => __( 'All Category' ),
+    'parent_item'       => __( 'Parent Category' ),
+    'parent_item_colon' => __( 'Parent Category :' ),
+    'edit_item'         => __( 'Edit Category' ), 
+    'update_item'       => __( 'Update Category' ),
+    'add_new_item'      => __( 'Add New Category' ),
+    'new_item_name'     => __( 'New Category' ),
+    'menu_name'         => __( 'Category' ),
+  );
+  $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+  );
+  register_taxonomy( 'blogs_category', 'blogs', $args );
+}
+add_action( 'init', 'my_taxonomies_Category', 0 );
+
+
 
 
 

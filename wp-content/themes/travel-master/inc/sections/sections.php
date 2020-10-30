@@ -18,6 +18,9 @@ require get_template_directory() . '/inc/sections/slider.php';
 // featured section
 require get_template_directory() . '/inc/sections/featured.php';
 
+// blog section
+require get_template_directory() . '/inc/sections/blog.php';
+
 // about section
 require get_template_directory() . '/inc/sections/about.php';
 
@@ -29,8 +32,7 @@ require get_template_directory() . '/inc/sections/about.php';
 // popular destination section
 require get_template_directory() . '/inc/sections/popular-destination.php';
 
-// blog section
-//require get_template_directory() . '/inc/sections/blog.php';
+
 
 // discover places section
 //require get_template_directory() . '/inc/sections/discover-places.php';

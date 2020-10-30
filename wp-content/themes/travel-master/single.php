@@ -26,7 +26,7 @@ get_header();
 					*  
 					* @hooked travel_master_post_pagination 
 					*/
-					do_action( 'travel_master_action_post_pagination' );
+					//do_action( 'travel_master_action_post_pagination' );
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :

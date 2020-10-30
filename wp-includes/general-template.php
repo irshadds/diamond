@@ -1711,6 +1711,8 @@ function get_the_archive_title() {
 
 	$original_title = $title;
 
+
+
 	/**
 	 * Filters the archive title prefix.
 	 *
@@ -1726,6 +1728,18 @@ function get_the_archive_title() {
 			$prefix,
 			'<span>' . $title . '</span>'
 		);
+	}
+
+	if ((get_post_type() == "recipes")){
+		$original_title = "Recipes";
+		$prefix="";
+		$title="Recipes";
+		
+
+	} elseif ((get_post_type() == "blogs")){
+		$original_title = "Blogs";
+		$prefix="";
+		$title="Blogs";
 	}
 
 	/**

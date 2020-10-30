@@ -51,7 +51,8 @@ if ( ! function_exists( 'travel_master_is_sidebar_enable' ) ) :
 			else
 				$post_sidebar_position = '';
 		} elseif ( is_archive() || is_search() ) {
-			$post_sidebar_position = '';
+			//$post_sidebar_position = '';
+			return false;
 		} else {
 			$post_sidebar_position = get_post_meta( get_the_id(), 'travel-master-sidebar-position', true );
 			if ( is_single() ) {

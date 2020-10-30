@@ -64,8 +64,8 @@ if ( ! function_exists( 'travel_master_get_blog_section_details' ) ) :
             case 'recent':
                 $cat_ids = ! empty( $options['blog_category_exclude'] ) ? $options['blog_category_exclude'] : array();
                 $args = array(
-                    'post_type'         => 'post',
-                    'posts_per_page'    => 4,
+                    'post_type'         => 'recipes',
+                    'posts_per_page'    => 8,
                     'category__not_in'  => ( array ) $cat_ids,
                     'ignore_sticky_posts'   => true,
                     );                    
@@ -127,40 +127,32 @@ if ( ! function_exists( 'travel_master_render_blog_section' ) ) :
                     <?php endif; ?>
                 </div><!-- .section-header -->
 
-                <div class="archive-blog-wrapper clear col-4">
-                    <?php foreach ( $content_details as $content ) : ?>
-                        <article class="<?php echo ! empty( $content['image'] ) ? 'has' : 'no'; ?>-post-thumbnail">
-                            <div class="post-item-wrapper">
-                                <div class="entry-container">
-                                    <span class="cat-links">
-                                        <?php the_category( '', '', $content['id'] ); ?>
-                                    </span><!-- .cat-links -->
+                <div class="grid-wrapper">
+                    <div class="grid-cols">
+                        <?php foreach ( $content_details as $content ) : ?>
+                        
+                                <div class="grid-col" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="grid-container">
+                                        <div class="grid-front" style="background-image: url('<?php echo esc_url( $content['image'] ); ?>');">
+                                            <div class="grid-inner">
+                                                <h3 class="entry-title"><a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h3>
 
-                                    <header class="entry-header">
-                                        <h2 class="entry-title"><a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h2>
-                                    </header>
-
-                                    <div class="entry-content">
-                                        <p><?php echo esc_html( $content['excerpt'] ); ?></p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .entry-container -->
-
-                                <?php if ( ! empty( $content['image'] ) ) : ?>
-                                    <div class="featured-image" style="background-image: url('<?php echo esc_url( $content['image'] ); ?>');">
-                                        <a href="<?php echo esc_url( $content['url'] ); ?>" class="post-thumbnail-link"></a>
-                                    </div><!-- .featured-image -->
-                                <?php endif; ?>
-
-                                <div class="entry-meta">
-                                    <?php  
-                                        travel_master_posted_on( $content['id'] );
-                                        echo travel_master_author_meta( $content['author_id'] );
-                                    ?>
-                                </div><!-- .entry-meta -->
-                            </div><!-- .post-item-wrapper -->
-                        </article>
-                    <?php endforeach; ?>
-                </div><!-- .archive-blog-wrapper -->
+                                            </div>
+                                        </div>
+                                            <div class="grid-back" style="background-image: url('wp-content/uploads/2020/10/unnamed-1.jpg');">
+                                                <div class="grid-inner">
+                                                    <?php if ( ! empty( $content['excerpt'] ) ) : ?>
+                                                    <p><?php echo substr(wp_kses_post( $content['excerpt'] ),0,80); ?> ...</p>
+                                                <?php endif; ?>
+                                                    <a href="<?php echo esc_url( $content['url'] ); ?>" class="btn">Read More</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                        <?php endforeach; ?>        
+                    </div>
+                    
+                </div>
 
             </div><!-- .wrapper -->
         </div><!-- #latest-posts -->

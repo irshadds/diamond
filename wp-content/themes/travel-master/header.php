@@ -86,3 +86,5 @@
 		}
 		do_action( 'travel_master_primary_content' );
 	}
+?>
+

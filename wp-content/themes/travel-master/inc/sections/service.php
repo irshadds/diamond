@@ -54,9 +54,9 @@ if ( ! function_exists( 'travel_master_get_service_section_details' ) ) :
         }
         
         $args = array(
-            'post_type'         => 'page',
+            'post_type'         => 'recipes',
             'post__in'          => ( array ) $page_ids,
-            'posts_per_page'    => 3,
+            'posts_per_page'    => 9,
             'orderby'           => 'post__in',
             );                    
 

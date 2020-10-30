@@ -66,6 +66,8 @@ if ( ! function_exists( 'travel_master_get_slider_section_details' ) ) :
         if ( $query->have_posts() ) : 
             while ( $query->have_posts() ) : $query->the_post();
                 $page_post['id']        = get_the_id();
+                $page_post['video_id']  = get_field( 'video_id', $post_id );
+                $page_post['button_label']  = get_field( 'button_label', $post_id );
                 $page_post['title']     = get_the_title();
                 $page_post['url']       = get_the_permalink();
                 $page_post['excerpt']   = travel_master_trim_content( 15 );
@@ -97,7 +99,7 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
    */
    function travel_master_render_slider_section( $content_details = array() ) {
         $options = travel_master_get_theme_options();
-        $btn_label = ! empty( $options['slider_btn_label'] ) ? $options['slider_btn_label'] : esc_html__( 'Learn More', 'travel-master' );
+
 
         if ( empty( $content_details ) ) {
             return;
@@ -106,7 +108,38 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
         <div id="featured-slider-section">
             <div class="featured-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "infinite": true, "speed": 1000, "dots": true, "arrows":true, "autoplay": <?php echo $options['slider_autoplay'] ? 'true' : 'false'; ?>, "draggable": true, "fade": true, "adaptiveHeight": true }'>
                 <?php foreach ( $content_details as $content ) : ?>
-                    <article style="background-image:url('<?php echo esc_url( $content['image'] ); ?>');">
+
+                    <?php if (! empty( $content['button_label'] )):?>
+
+                        <?php $btn_label = $content['button_label']; ?>
+                        
+                    
+                    <?php else: ?>
+                            
+                            <?php $btn_label = ! empty( $options['slider_btn_label'] ) ? $options['slider_btn_label'] : esc_html__( 'Learn More', 'travel-master' ); ?>
+
+                    <?php endif; ?>
+
+
+                
+                <?php if ( ! empty( $content['video_id'] ) ) : ?>
+
+                     <article class="videoWrapper">
+                        <?php /* <iframe class="videoWrapper-iframe"
+                                src="https://www.youtube.com/embed/<?php $content['video_id']?>&autoplay=1"frameborder="0" width="720" height="480"
+                    allowfullscreen> 
+                        
+                            </iframe> */ ?>
+
+                            <iframe class= "embed-player" width="560" height="315" src="https://www.youtube.com/embed/fa_DIwRsa9o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                     </article> 
+                        
+
+                <?php else : ?>
+
+                     <article style="background-image:url('<?php echo esc_url( $content['image'] ); ?>');">
+
                         <div class="overlay"></div>
                         <div class="wrapper">
                             <div class="featured-content-wrapper">
@@ -128,6 +161,12 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
                             </div><!-- .featured-content-wrapper -->
                         </div><!-- .wrapper -->
                     </article>
+
+                <?php endif; ?>
+
+               
+
+                        
                 <?php endforeach; ?>
             </div><!-- .featured-slider -->  
 

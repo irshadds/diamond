@@ -1,0 +1,1 @@
+<?php echo do_shortcode('[grid_plus name="Latest Recipes"]'); ?>

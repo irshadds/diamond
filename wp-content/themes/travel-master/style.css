@@ -4,7 +4,7 @@ Theme URI: https://themepalace.com/downloads/travel-master
 Author: Theme Palace
 Author URI: https://themepalace.com
 Description: Travel Master is a WordPress theme developed for travel agencies and tour operators of any size. Also, ideal for tour operators and travel agents specializing in day tours, tour packages, vacations, hiking and camping, city tours, cruise packages etc. It is one of the most competent and resourceful WordPress themes with powerful admin panel. You can easily customize the site with customizer tools. You can add or remove anything, change styles, logos, without or very little code knowledge.
-Version: 1.1.1
+Version: 1.1.2
 Requires PHP: 5.6
 Tested up to: 5.5
 License: GNU General Public License v3 or later
@@ -665,18 +665,24 @@ table#wp-calendar {
     width: 100%;
     overflow: auto;
 }
+
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+
+
+
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, .8);
+	border-color: white;
+	border-radius: 12px;
+	background: #e5f8fc;
+	color: #1c0d69;
 	font-size: 12px;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -687,7 +693,9 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	background-color: #1c0d69;
+    border: white;
+    color: white;
 }
 
 button:focus,
@@ -698,7 +706,9 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
+	background-color: #1c0d69;
+    border: #fff;
+    color: #fff;
 }
 
 input[type="text"],
@@ -792,7 +802,7 @@ textarea {
     text-align: center;
     background-color: #e5f8fc;
     border: 2px solid #e5f8fc;
-    color: #00afe9;
+    color: #1c0d69;
     border-radius: 50px;
     height: auto;
     min-height: auto;
@@ -805,9 +815,9 @@ textarea {
 }
 #respond input[type="submit"]:hover,
 #respond input[type="submit"]:focus {
-	background-color: #00afe9;
-	border-color: #00afe9;
-    color: #fff;
+	background-color: #1c0d69;
+  	border: white;
+  	color: white;
 }
 p.form-submit {
     clear: both;
@@ -1719,7 +1729,7 @@ input[type="submit"] {
     text-align: center;
     background-color: #e5f8fc;
     border: 2px solid #e5f8fc;
-    color: #00afe9;
+    color: #1c0d69;
     border-radius: 50px;
     font-family: 'Raleway', sans-serif;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1730,8 +1740,8 @@ input[type="submit"] {
 }
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-	background-color: #00afe9;
-    border-color: #00afe9;
+	background-color: #1c0d69;
+    border-color: #1c0d69;
     color: #fff;
 }
 .widget_popular_post ul,
@@ -1950,6 +1960,14 @@ input[type="submit"]:focus {
 .entry-summary {
 	margin: 0;
 }
+.entry-content-grid{
+	display: none;
+}
+
+.entry-content-grid:hover{
+	display: block;
+}
+
 
 .author img {
     border-radius: 50%;
@@ -2467,7 +2485,7 @@ section {
     text-align: center;
     background-color: #e5f8fc;
     border: 2px solid #e5f8fc;
-	color: #00afe9;
+	color: #1c0d69;
     border-radius: 50px;
     font-family: 'Raleway', sans-serif;
     -webkit-transition: all 0.3s ease-in-out;
@@ -2478,8 +2496,8 @@ section {
 }
 .btn:hover,
 .btn:focus {
-	background-color: #00afe9;
-	border-color: #00afe9;
+	background-color: #1c0d69;
+	border-color: #1c0d69;
 	color: #fff;
 }
 /*--------------------------------------------------------------
@@ -3025,6 +3043,8 @@ object {
     color: #fff;
     opacity: 0.7;
 }
+
+
 .featured-content-wrapper .entry-title a:hover,
 .featured-content-wrapper .entry-title a:focus {
 	opacity: 1;
@@ -3048,7 +3068,7 @@ object {
 .featured-slider .btn:hover,
 .featured-slider .btn:focus {
 	background-color: #fff;
-	color: #00afe9;
+	color: #1c0d69;
 }
 .video-link {
     color: #fff;
@@ -5111,7 +5131,7 @@ h2.resp-accordion {
     font-weight: 500;
     font-size: 14px;
     border-radius: 5px;
-    background-color: #dc1b10;
+    background-color: #1c0d69;
 }
 .ws-theme-cart-page .coupon input[type="submit"], 
 .ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type="submit"], 
@@ -7509,3 +7529,270 @@ body:not(.home).dark-version,
 	}
 }
 
+.grid-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.grid-cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.grid-container{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+}
+
+.grid-front,
+.grid-back{
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  border-radius: 10px;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.grid-back{
+	z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+.grid-front:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.grid-container:hover .grid-front,
+.grid-container:hover .grid-back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.grid-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.grid-inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.grid-inner .entry-title a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.grid-inner  p {
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.grid-container .grid-back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.grid-container .grid-front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.grid-container:hover .grid-back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.grid-container:hover .grid-front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.grid-front .grid-inner p{
+  font-size: 16px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.grid-back .grid-inner p{
+  font-size: 16px;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #1c0d69;
+}
+
+.grid-front .grid-inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.grid-front .grid-inner span{
+  color: rgba(255,255,255,0.7);
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 64rem){
+  .grid-col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .grid-col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .grid-col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 */
+}
+.videoWrapper-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.facetwp-radio {
+	background: none;
+    background-image: none;
+    background-color: #fff;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #1c0d69;
+    border-width: 2px;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px;
+    width: 30%;
+    color: #1c0d69;
+}
+
+.facetwp-radio.checked {
+	
+	background: none;
+    background-image: none;
+    background-color: #1c0d69;
+    color: #fff;
+    border-radius: 50px;
+    width: 30%;
+}
+
+.facetwp-radio:hover {
+	
+	background: none;
+    background-image: none;
+    background-color: #1c0d69;
+    color: #fff;
+    border-radius: 50px;
+    width: 30%;
+}
+
+.facetwp-type-dropdown{
+
+	width:10%;
+
+	display: inline-block;
+
+}
+
+.facetwp-counter {
+    display: none;
+}

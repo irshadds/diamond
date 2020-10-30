@@ -138,6 +138,8 @@ function travel_master_customize_register( $wp_customize ) {
 	// load featured option
 	require get_template_directory() . '/inc/customizer/sections/featured.php';
 
+	
+
 	// load popular destination option
 	require get_template_directory() . '/inc/customizer/sections/popular-destination.php';
 

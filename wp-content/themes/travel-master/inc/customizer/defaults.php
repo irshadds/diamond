@@ -44,7 +44,7 @@ function travel_master_get_default_theme_options() {
 		'enable_frontpage_content' 		=> false,
 
 		// homepage sections sortable
-		'sortable' 						=> 'slider,trip_search,featured,about,popular_destination,service,blog,discover_places',
+		'sortable' 						=> 'slider,trip_search,featured,blog,about,popular_destination,service,discover_places',
 
 		// blog/archive options
 		'your_latest_posts_title' 		=> esc_html__( 'Blogs', 'travel-master' ),
@@ -85,7 +85,7 @@ function travel_master_get_default_theme_options() {
 		'about_btn_title'				=> esc_html__( 'Explore More', 'travel-master' ),
 
 		// service
-		'service_section_enable'		=> false,
+		'service_section_enable'		=> true,
 
 		// blog
 		'blog_section_enable'			=> false,

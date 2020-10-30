@@ -23,6 +23,8 @@ $class = has_post_thumbnail() ? '' : 'no-post-thumbnail';
     	<div class="entry-container">
 			<div class="entry-content">
 				<?php
+
+
 					
 					the_content();
 

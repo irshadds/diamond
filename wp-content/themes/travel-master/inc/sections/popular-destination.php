@@ -60,8 +60,7 @@ if ( ! function_exists( 'travel_master_get_popular_destination_section_details' 
                 }
                 
                 $args = array(
-                    'post_type'         => 'post',
-                    'category_name'     => 'logo',
+                    'post_type'         => 'brand',
                     'post__in'          => ( array ) $page_ids,
                     'posts_per_page'    => 4,
                     'orderby'           => 'post__in',
@@ -152,8 +151,8 @@ if ( ! function_exists( 'travel_master_render_popular_destination_section' ) ) :
                             <div class="destination-item-wrapper">
                                 <div class="featured-image" style="background-image: url('<?php echo esc_url( $content['image'] ); ?>');">
                                     <div class="overlay"></div>
-                                    <a href="<?php echo esc_url( $content['url'] ) ?>" class="more-link">
-                                        <?php echo travel_master_get_svg( array( 'icon' => 'add' ) ); ?>
+                                    <a href="<?php echo esc_url( $content['url'] ) ?>">
+                                       
                                     </a><!-- .more-link -->
 
                                     <?php if ( ! in_array( $popular_destination_content_type, array( 'category', 'page', 'post' ) ) ) : 
