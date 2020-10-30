@@ -15,23 +15,23 @@ if ( ! function_exists( 'travel_master_add_service_section' ) ) :
     *@since Travel Master 1.0.0
     */
     function travel_master_add_service_section() {
-        $options = travel_master_get_theme_options();
-        // Check if service is enabled on frontpage
-        $service_enable = apply_filters( 'travel_master_section_status', true, 'service_section_enable' );
+        // $options = travel_master_get_theme_options();
+        // // Check if service is enabled on frontpage
+        // $service_enable = apply_filters( 'travel_master_section_status', true, 'service_section_enable' );
 
-        if ( true !== $service_enable ) {
-            return false;
-        }
-        // Get service section details
-        $section_details = array();
-        $section_details = apply_filters( 'travel_master_filter_service_section_details', $section_details );
+        // if ( true !== $service_enable ) {
+        //     return false;
+        // }
+        // // Get service section details
+        // $section_details = array();
+        // $section_details = apply_filters( 'travel_master_filter_service_section_details', $section_details );
 
-        if ( empty( $section_details ) ) {
-            return;
-        }
+        // if ( empty( $section_details ) ) {
+        //     return;
+        // }
 
-        // Render service section now.
-        travel_master_render_service_section( $section_details );
+        // // Render service section now.
+        // travel_master_render_service_section( $section_details );
     }
 endif;
 
@@ -84,7 +84,7 @@ if ( ! function_exists( 'travel_master_get_service_section_details' ) ) :
     }
 endif;
 // service section content details.
-add_filter( 'travel_master_filter_service_section_details', 'travel_master_get_service_section_details' );
+// add_filter( 'travel_master_filter_service_section_details', 'travel_master_get_service_section_details' );
 
 
 if ( ! function_exists( 'travel_master_render_service_section' ) ) :
@@ -96,6 +96,8 @@ if ( ! function_exists( 'travel_master_render_service_section' ) ) :
    *
    */
    function travel_master_render_service_section( $content_details = array() ) {
+        return;
+
         $options = travel_master_get_theme_options();
         $i = 1;        
 

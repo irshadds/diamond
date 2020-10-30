@@ -15,23 +15,23 @@ if ( ! function_exists( 'travel_master_add_discover_places_section' ) ) :
     *@since Travel Master 1.0.0
     */
     function travel_master_add_discover_places_section() {
-    	$options = travel_master_get_theme_options();
-        // Check if destination is enabled on frontpage
-        $discover_places_enable = apply_filters( 'travel_master_section_status', true, 'discover_places_section_enable' );
+    	// $options = travel_master_get_theme_options();
+        // // Check if destination is enabled on frontpage
+        // $discover_places_enable = apply_filters( 'travel_master_section_status', true, 'discover_places_section_enable' );
 
-        if ( true !== $discover_places_enable ) {
-            return false;
-        }
-        // Get destination section details
-        $section_details = array();
-        $section_details = apply_filters( 'travel_master_filter_discover_places_section_details', $section_details );
+        // if ( true !== $discover_places_enable ) {
+        //     return false;
+        // }
+        // // Get destination section details
+        // $section_details = array();
+        // $section_details = apply_filters( 'travel_master_filter_discover_places_section_details', $section_details );
 
-        if ( empty( $section_details ) ) {
-            return;
-        }
+        // if ( empty( $section_details ) ) {
+        //     return;
+        // }
 
-        // Render destination section now.
-        travel_master_render_discover_places_section( $section_details );
+        // // Render destination section now.
+        // travel_master_render_discover_places_section( $section_details );
     }
 endif;
 
@@ -114,7 +114,7 @@ if ( ! function_exists( 'travel_master_get_discover_places_section_details' ) ) 
     }
 endif;
 // destination section content details.
-add_filter( 'travel_master_filter_discover_places_section_details', 'travel_master_get_discover_places_section_details' );
+// add_filter( 'travel_master_filter_discover_places_section_details', 'travel_master_get_discover_places_section_details' );
 
 
 if ( ! function_exists( 'travel_master_render_discover_places_section' ) ) :
@@ -126,6 +126,8 @@ if ( ! function_exists( 'travel_master_render_discover_places_section' ) ) :
    *
    */
    function travel_master_render_discover_places_section( $content_details = array() ) {
+        return;
+
         $options = travel_master_get_theme_options();
         $readmore = ! empty( $options['discover_places_read_more'] ) ? $options['discover_places_read_more'] : esc_html__( 'View Details', 'travel-master' );
 
