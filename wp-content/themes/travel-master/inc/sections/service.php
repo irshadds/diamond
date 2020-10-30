@@ -84,7 +84,7 @@ if ( ! function_exists( 'travel_master_get_service_section_details' ) ) :
     }
 endif;
 // service section content details.
-add_filter( 'travel_master_filter_service_section_details', 'travel_master_get_service_section_details' );
+// add_filter( 'travel_master_filter_service_section_details', 'travel_master_get_service_section_details' );
 
 
 if ( ! function_exists( 'travel_master_render_service_section' ) ) :
@@ -96,6 +96,8 @@ if ( ! function_exists( 'travel_master_render_service_section' ) ) :
    *
    */
    function travel_master_render_service_section( $content_details = array() ) {
+        return;
+
         $options = travel_master_get_theme_options();
         $i = 1;        
 

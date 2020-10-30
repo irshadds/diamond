@@ -37,6 +37,8 @@ if ( ! function_exists( 'travel_master_render_trip_search_section' ) ) :
    *
    */
    function travel_master_render_trip_search_section() {
+        return;
+
         if ( ! class_exists('WP_Travel') ) 
             return;
                 
