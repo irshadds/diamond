@@ -66,8 +66,8 @@ if ( ! function_exists( 'travel_master_get_slider_section_details' ) ) :
         if ( $query->have_posts() ) : 
             while ( $query->have_posts() ) : $query->the_post();
                 $page_post['id']        = get_the_id();
-                $page_post['video_id']  = get_field( 'video_id', $post->id );
-                $page_post['button_label']  = get_field( 'button_label', $post->id );
+                $page_post['video_id']  = get_field( 'video_id', get_the_ID() );
+                $page_post['button_label']  = get_field( 'button_label', get_the_ID() );
                 $page_post['title']     = get_the_title();
                 $page_post['url']       = get_the_permalink();
                 $page_post['excerpt']   = travel_master_trim_content( 15 );
