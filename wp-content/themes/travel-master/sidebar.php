@@ -11,7 +11,7 @@
 
 $post_sidebar = 'sidebar-1';
 if ( is_singular() || is_home() ) :
-	$sidebar_id = ( is_home() && ! is_front_page() ! is_archive() ) ? get_option( 'page_for_posts' ) : get_the_id();
+	$sidebar_id = ( is_home() && ! is_front_page() && ! is_archive() ) ? get_option( 'page_for_posts' ) : get_the_id();
 	$post_sidebar = get_post_meta( $sidebar_id, 'travel-master-selected-sidebar', true );
 	$post_sidebar = ! empty( $post_sidebar ) ? $post_sidebar : 'sidebar-1';
 endif;
