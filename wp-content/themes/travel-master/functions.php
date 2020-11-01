@@ -329,7 +329,7 @@ function travel_master_scripts() {
 
 	wp_enqueue_script( 'travel-master-jquery-slick', get_template_directory_uri() . '/assets/js/slick' . travel_master_min() . '.js', array( 'jquery' ), '', true );
 
-	wp_enqueue_script( 'travel-master-custom', get_template_directory_uri() . '/assets/js/custom' . travel_master_min() . '.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( 'travel-master-custom', get_template_directory_uri() . '/assets/js/custom' . '.js', array( 'jquery' ), '20151215', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'travel_master_scripts' );

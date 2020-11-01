@@ -123,17 +123,26 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
 
                 
                 <?php if ( ! empty( $content['video_id'] ) ) : ?>
+                   
 
-                     <article class="videoWrapper">
+                    <div class="item youtube">
+
+                        <?php $source = "https://www.youtube.com/embed/". $content['video_id']. "?autoplay=1&enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&start=1"; ?>
+
+                         <iframe class="embed-player slide-media" src="<?php echo $source ?>" frameborder="0" allowfullscreen></iframe>
+
+                    </div>
+                     
                         <?php /* <iframe class="videoWrapper-iframe"
                                 src="https://www.youtube.com/embed/<?php $content['video_id']?>&autoplay=1"frameborder="0" width="720" height="480"
                     allowfullscreen> 
                         
                             </iframe> */ ?>
-
-                            <iframe class= "embed-player" width="560" height="315" src="https://www.youtube.com/embed/fa_DIwRsa9o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       
+                           
+                        
                     
-                     </article> 
+                    
                         
 
                 <?php else : ?>

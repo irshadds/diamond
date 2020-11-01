@@ -3060,6 +3060,7 @@ object {
     margin-left: auto;
     margin-right: auto;
 }
+
 .featured-slider .btn {
     background-color: transparent;
     border-color: #fff;
@@ -3070,6 +3071,8 @@ object {
 	background-color: #fff;
 	color: #1c0d69;
 }
+
+
 .video-link {
     color: #fff;
     margin-top: 23px;
@@ -3227,6 +3230,50 @@ object {
     visibility: visible;
     display: block;
 }
+
+ .slick-slide {
+  position: relative;
+  height: 38vw;
+  @extend %bv_hidden;
+  &::before {
+    @extend %filled_obj;
+    @extend %bv_hidden;
+    background-color: #000;
+    opacity: .3;
+    z-index: 1;
+  }
+  video {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform:translate(-50%, -50%);
+  }
+  iframe {
+    position: relative;
+    pointer-events: none;
+  }
+  .slide-media {
+    animation:slideOut .4s cubic-bezier(0.4, 0.29, 0.01, 1);
+  }
+  &.slick-active {
+    z-index: 1;
+    .slide-media {
+      animation:slideIn 2.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+    }
+    .caption {
+      opacity: 1;
+      transform:translateY(0);
+      transition:all .7s cubic-bezier(0.32, 0.34, 0, 1.62) .6s;
+    }
+  }
+}
+
+
 /*--------------------------------------------------------------
 #  Our Services
 --------------------------------------------------------------*/
@@ -7815,4 +7862,15 @@ body:not(.home).dark-version,
 	background-color: #1c0d69;
 	border-color: #1c0d69;
 	color: #fff;
+}
+
+
+.iframe-wrapper {
+
+	width: 100vw;
+    height: 120vh;
+    position: absolute;
+    left: 0px;
+    top: -69px;
+    z-index: 998;
 }
