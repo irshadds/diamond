@@ -127,7 +127,7 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
 
                     <div class="item youtube">
 
-                        <?php $source = "https://www.youtube.com/embed/". $content['video_id']. "?autoplay=1&enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&start=1"; ?>
+                        <?php $source = "https://www.youtube.com/embed/". $content['video_id']. "?autoplay=0&enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&start=1"; ?>
 
                          <iframe class="embed-player slide-media" src="<?php echo $source ?>" frameborder="0" allowfullscreen></iframe>
 
