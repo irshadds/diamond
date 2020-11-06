@@ -1031,6 +1031,7 @@ a:active {
 	display: block;
     position: relative;
     float: right;
+    margin-top: -100px;
 }
 .main-navigation ul#primary-menu li.current-menu-item > a,
 .main-navigation ul#primary-menu li:hover > a,
@@ -6439,7 +6440,7 @@ body:not(.home).dark-version,
 		width: 35%;
 	}
 	.main-navigation {
-		width: 65%;
+		width: 75%;
 	}
 	.main-navigation ul.nav-menu > li.social-menu {
 	    float: right;
@@ -6667,6 +6668,7 @@ body:not(.home).dark-version,
 	    top: 0;
 	    left: 0;
 	    width: 100%;
+
 	}
 	.home.featured-slider-enabled #masthead {
 		position: absolute;

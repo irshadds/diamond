@@ -23,7 +23,7 @@ get_header();
 
     	<?php if (get_post_type() == "recipes") : ?>
 
-    		<?php 	echo do_shortcode( '[facetwp facet="media_type"]' ); ?>
+    		<?php 	echo do_shortcode( '[facetwp facet="media_category"]' ); ?>
 			<?php 	echo do_shortcode( '[facetwp facet="brand"]' ); ?>
 			<?php 	echo do_shortcode( '[facetwp facet="category"]' ); ?>
 		<?php endif?>

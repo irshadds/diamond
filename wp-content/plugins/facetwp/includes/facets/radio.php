@@ -105,7 +105,7 @@ class FacetWP_Facet_Radio_Core extends FacetWP_Facet
         $selected_values = (array) $params['selected_values'];
         $label_any = empty( $facet['label_any'] ) ? false : facetwp_i18n( $facet['label_any'] );
 
-        var_dump($values);
+        
 
         if ( $label_any ) {
             $selected = empty( $selected_values ) ? ' checked' : '';

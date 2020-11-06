@@ -132,6 +132,8 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
                          <iframe class="embed-player slide-media" src="<?php echo $source ?>" frameborder="0" allowfullscreen></iframe>
 
                     </div>
+                    
+
                      
                         <?php /* <iframe class="videoWrapper-iframe"
                                 src="https://www.youtube.com/embed/<?php $content['video_id']?>&autoplay=1"frameborder="0" width="720" height="480"
