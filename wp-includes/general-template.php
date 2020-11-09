@@ -1740,7 +1740,12 @@ function get_the_archive_title() {
 		$original_title = "Blogs";
 		$prefix="";
 		$title="Blogs";
+	} elseif ((get_post_type() == "brand")){
+		$original_title = "Brands";
+		$prefix="";
+		$title="Brands";
 	}
+	
 
 	/**
 	 * Filters the archive title.
