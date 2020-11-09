@@ -59,8 +59,8 @@ if ( ! function_exists( 'travel_master_get_featured_section_details' ) ) :
                 }
                 
                 $args = array(
-                    'post_type'         => 'post',
-                    'category_name'     => 'featured',
+                    'post_type'         => 'recipes',
+                    'recipes_category'  => 'featured',
                     'post__in'          => ( array ) $page_ids,
                     'posts_per_page'    => 4,
                     'orderby'           => 'post__in',
