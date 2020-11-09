@@ -470,7 +470,7 @@ function custom_brand_type() {
         'name'               => _x( 'Brands', 'post type general name' ),
 	    'singular_name'      => _x( 'Brands', 'post type singular name' ),
 	    'add_new'            => _x( 'Add New', 'brand' ),
-	    'add_new_item'       => __( 'Add New ç' ),
+	    'add_new_item'       => __( 'Add New Brand' ),
 	    'edit_item'          => __( 'Edit Brand' ),
 	    'new_item'           => __( 'New Brand' ),
 	    'all_items'          => __( 'All Brands' ),
@@ -524,6 +524,29 @@ function my_taxonomies_brand() {
   register_taxonomy( 'brand_product', 'brand', $args );
 }
 add_action( 'init', 'my_taxonomies_brand', 0 );
+
+
+function my_taxonomies_brand_type() {
+  $labels = array(
+    'name'              => _x( 'Brand Type', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Brand Type', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Brand Type' ),
+    'all_items'         => __( 'All Brand Types' ),
+    'parent_item'       => __( 'Parent Brand Type' ),
+    'parent_item_colon' => __( 'Parent Brand Type :' ),
+    'edit_item'         => __( 'Edit Brand Type' ), 
+    'update_item'       => __( 'Update Brand Type' ),
+    'add_new_item'      => __( 'Add New Brand Type' ),
+    'new_item_name'     => __( 'New Brand Type' ),
+    'menu_name'         => __( 'Brand Type' ),
+  );
+  $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+  );
+  register_taxonomy( 'brand_type', 'brand', $args );
+}
+add_action( 'init', 'my_taxonomies_brand_type', 0 );
 
 
 
