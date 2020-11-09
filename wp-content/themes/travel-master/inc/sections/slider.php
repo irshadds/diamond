@@ -65,13 +65,14 @@ if ( ! function_exists( 'travel_master_get_slider_section_details' ) ) :
         $query = new WP_Query( $args );
         if ( $query->have_posts() ) : 
             while ( $query->have_posts() ) : $query->the_post();
-                $page_post['id']        = get_the_id();
-                $page_post['video_id']  = get_field( 'video_id', get_the_ID() );
+                $page_post['id']            = get_the_id();
+                $page_post['video_id']      = get_field( 'video_id', get_the_ID() );
                 $page_post['button_label']  = get_field( 'button_label', get_the_ID() );
-                $page_post['title']     = get_the_title();
-                $page_post['url']       = get_the_permalink();
-                $page_post['excerpt']   = travel_master_trim_content( 15 );
-                $page_post['image']  	= has_post_thumbnail() ? get_the_post_thumbnail_url( get_the_id(), 'full' ) : '';
+                $page_post['button_link']   = get_field( 'button_link', get_the_ID() );
+                $page_post['title']         = get_the_title();
+                $page_post['url']           = get_the_permalink();
+                $page_post['excerpt']       = travel_master_trim_content( 15 );
+                $page_post['image']  	    = has_post_thumbnail() ? get_the_post_thumbnail_url( get_the_id(), 'full' ) : '';
 
                 // Push to the main array.
                 array_push( $content, $page_post );
@@ -109,6 +110,8 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
             <div class="featured-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "infinite": true, "speed": 1000, "dots": true, "arrows":true, "autoplay": <?php echo $options['slider_autoplay'] ? 'true' : 'false'; ?>, "draggable": true, "fade": true, "adaptiveHeight": true }'>
                 <?php foreach ( $content_details as $content ) : ?>
 
+
+
                     <?php if (! empty( $content['button_label'] )):?>
 
                         <?php $btn_label = $content['button_label']; ?>
@@ -124,16 +127,18 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
                 
                 <?php if ( ! empty( $content['video_id'] ) ) : ?>
                    
-
+                
                     <div class="item youtube">
 
                         <?php $source = "https://www.youtube.com/embed/". $content['video_id']. "?autoplay=0&enablejsapi=1&controls=0&fs=0&iv_load_policy=3&rel=0&showinfo=0&loop=1&start=1"; ?>
 
                          <iframe class="embed-player slide-media" src="<?php echo $source ?>" frameborder="0" allowfullscreen></iframe>
-
+                        
                     </div>
-                    
 
+                    
+                    
+                    
                      
                         <?php /* <iframe class="videoWrapper-iframe"
                                 src="https://www.youtube.com/embed/<?php $content['video_id']?>&autoplay=1"frameborder="0" width="720" height="480"
@@ -161,14 +166,16 @@ if ( ! function_exists( 'travel_master_render_slider_section' ) ) :
                                 <div class="entry-content">
                                     <p><?php echo esc_html( $content['excerpt'] ); ?></p>
                                 </div><!-- .entry-content-->
-
+                                <?php if (! empty( $content['button_link'] )):?>  
                                 <div class="read-more">
-                                    <a href="<?php echo esc_url( $content['url'] ); ?>" class="btn btn-fill">
+                                 
+                                    <a href="<?php echo esc_url( $content['button_link'] ); ?>" class="btn btn-fill" target="_blank">
+
                                         <span class="screen-reader-text"><?php echo esc_html( $content['title'] ); ?></span>
                                         <?php echo esc_html( $btn_label ); ?>
                                     </a>
                                 </div><!-- .read-more -->
-
+                                <?php endif; ?>
                             </div><!-- .featured-content-wrapper -->
                         </div><!-- .wrapper -->
                     </article>
