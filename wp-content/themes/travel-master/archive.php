@@ -21,12 +21,20 @@ get_header();
 
     <div id="primary" class="content-area">
 
-    	<?php if (get_post_type() == "recipes") : ?>
+    	<?php 
 
-    		<?php 	echo do_shortcode( '[facetwp facet="media_category"]' ); ?>
-			<?php 	echo do_shortcode( '[facetwp facet="brand"]' ); ?>
-			<?php 	echo do_shortcode( '[facetwp facet="category"]' ); ?>
-		<?php endif?>
+    	if (get_post_type() == "recipes") :
+
+    		echo do_shortcode( '[facetwp facet="media_category"]' ); 
+    		echo do_shortcode( '[facetwp facet="brand"]' ); 
+    		echo do_shortcode( '[facetwp facet="category"]' );
+
+    	elseif (get_post_type() == "brand") :
+
+    		echo do_shortcode( '[facetwp facet="product_type"]' );
+    		echo do_shortcode( '[facetwp facet="brand_type"]' );
+    	
+		endif;?>
 
         <main id="main" class="site-main" role="main">
             <div class="archive-blog-wrapper clear col-3">
