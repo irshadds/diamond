@@ -250,47 +250,38 @@ $(window).on("resize.slickVideoPlayer", function(){
   resizePlayer(iframes, 16/9);
 });
 
-// $('.gallery-slider').slick({
-//     responsive: [{
-//         breakpoint: 1200,
-//             settings: {
-//             slidesToShow: 2
-//         }
-//     },
-//     {
-//         breakpoint: 400,
-//         settings: {
-//             slidesToShow: 1
-//         }
-//     }]
-// });
-// $('#destination-slider .destination-slider-wrapper').slick({
-//     responsive: [{
-//         breakpoint: 767,
-//             settings: {
-//             slidesToShow: 1,
-//             fade: false,
-//             arrows: true,
-//             dots: false
-//         }
-//     }]
-// });
-// $('.places-slider').slick();
-// $('.clients-feedback').slick({
-//     responsive: [{
-//         breakpoint: 1200,
-//             settings: {
-//             slidesToShow: 2
-//         }
-//     },
-//     {
-//         breakpoint: 992,
-//         settings: {
-//             slidesToShow: 1,
-//             fade: true
-//         }
-//     }]
-// });
+
+
+$('.carousel').slick({
+    slidesToShow: 3,
+    arrows:false,
+    dots:true,
+    infinite:true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 1200,
+            settings: {
+            slidesToShow: 3,
+            infinite:true,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            
+
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            centerMode : true, 
+            variableWidth: true
+            
+        }
+    }]
+});
 
 
 

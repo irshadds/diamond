@@ -53,7 +53,7 @@ if ( ! function_exists( 'travel_master_get_featured_section_details' ) ) :
             case 'page':
                 $page_ids = array();
 
-                for ( $i = 1; $i <= 4; $i++ ) {
+                for ( $i = 1; $i <= 11; $i++ ) {
                     if ( ! empty( $options['featured_content_page_' . $i] ) )
                         $page_ids[] = $options['featured_content_page_' . $i];
                 }
@@ -62,7 +62,7 @@ if ( ! function_exists( 'travel_master_get_featured_section_details' ) ) :
                     'post_type'         => 'recipes',
                     'recipes_category'  => 'featured',
                     'post__in'          => ( array ) $page_ids,
-                    'posts_per_page'    => 4,
+                    'posts_per_page'    => 11,
                     'orderby'           => 'post__in',
                     );                    
             break;
@@ -81,7 +81,7 @@ if ( ! function_exists( 'travel_master_get_featured_section_details' ) ) :
                 $args = array(
                     'post_type'         => 'itineraries',
                     'post__in'          => ( array ) $page_ids,
-                    'posts_per_page'    => 4,
+                    'posts_per_page'    => 8,
                     'orderby'           => 'post__in',
                     );                    
             break;
@@ -135,9 +135,9 @@ if ( ! function_exists( 'travel_master_render_featured_section' ) ) :
 
         <div id="featured-destinations" class="relative page-section">
             <div class="wrapper">
-                <div class="section-content col-4 clear">
+                <div class="carousel section-content clear">
                     <?php foreach ( $content_details as $content ) : ?>
-                        <article>
+                        <article class="carousel-item">
                             <div class="featured-image" style="background-image: url('<?php echo esc_url( $content['image'] ); ?>');">
                                 <?php if ( ! in_array( $featured_content_type, array( 'category', 'page', 'post' ) ) ) : 
                                     $price_key = '';
