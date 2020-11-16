@@ -6478,6 +6478,7 @@ body:not(.home).dark-version,
 	}
 	.main-navigation {
 		width: 75%;
+
 	}
 	.main-navigation ul.nav-menu > li.social-menu {
 	    float: right;
@@ -7144,6 +7145,7 @@ body:not(.home).dark-version,
 	}
 	.main-navigation {
 		position: static;
+		margin-top: 0;
 	}
 	.main-navigation a {
 		color: #1c2b42;
