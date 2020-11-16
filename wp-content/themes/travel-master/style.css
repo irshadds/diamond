@@ -162,7 +162,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	position:absolute;
 	animation: preloader 1.5s  infinite ease-in-out;
 }
- 
+
 #preloader span:nth-child(2) {
 	left:11px;
 	animation-delay: .2s;
@@ -833,7 +833,7 @@ p.form-submit {
     margin-bottom: 5px;
     display: block;
 }
-#commentform p {    
+#commentform p {
     margin-bottom: 21px;
 }
 .customize-support #commentform p.comment-form-comment {
@@ -848,7 +848,7 @@ p.form-submit {
 #respond {
     margin-top: 50px;
 }
-#respond .comment-form-cookies-consent input[type="checkbox"], 
+#respond .comment-form-cookies-consent input[type="checkbox"],
 .comment-form-cookies-consent input[type="checkbox"] {
     width: auto;
     float: left;
@@ -856,7 +856,7 @@ p.form-submit {
     min-height: auto;
     margin-right: 10px;
 }
-#respond .comment-form-cookies-consent label, 
+#respond .comment-form-cookies-consent label,
 .comment-form-cookies-consent label {
     display: table;
     margin: 0;
@@ -1321,18 +1321,18 @@ button.dropdown-toggle {
 	width: 50%;
 	position: relative;
 }
-.post-navigation a, 
+.post-navigation a,
 .posts-navigation a {
     font-weight: 400;
     color: #ffbb44;
 }
-.post-navigation a:hover, 
+.post-navigation a:hover,
 .posts-navigation a:hover,
-.post-navigation a:focus, 
+.post-navigation a:focus,
 .posts-navigation a:focus {
 	color: #242625;
 }
-.post-navigation, 
+.post-navigation,
 .posts-navigation {
     padding: 0;
     position: relative;
@@ -1361,10 +1361,10 @@ button.dropdown-toggle {
     border-color: #00afe9;
     background-color: #00afe9;
 }
-.pagination .prev.page-numbers, 
+.pagination .prev.page-numbers,
 .pagination .next.page-numbers {
     border: none;
-} 
+}
 .pagination .prev.page-numbers img {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -1417,15 +1417,15 @@ button.dropdown-toggle {
 .posts-navigation span {
     display: table;
 }
-.navigation.post-navigation, 
+.navigation.post-navigation,
 .navigation.posts-navigation {
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #dcdcdc;
 }
-.navigation.post-navigation .nav-previous, 
+.navigation.post-navigation .nav-previous,
 .navigation.posts-navigation .nav-previous,
-.navigation.post-navigation .nav-next, 
+.navigation.post-navigation .nav-next,
 .navigation.posts-navigation .nav-next {
 	padding: 26px;
 }
@@ -1702,7 +1702,7 @@ form.search-form input {
 .widget_instagram .col-5 li:nth-child(5n+1) {
 	clear: left;
 }
-.right-sidebar #secondary, 
+.right-sidebar #secondary,
 .left-sidebar #secondary {
 	margin-top: 50px;
 }
@@ -2035,7 +2035,7 @@ nav.navigation.pagination {
 .navigation.pagination a:focus svg {
 	fill: #fff;
 }
-.navigation.posts-navigation svg, 
+.navigation.posts-navigation svg,
 .navigation.post-navigation svg {
     width: 13px;
     height: 13px;
@@ -2043,11 +2043,11 @@ nav.navigation.pagination {
     display: inline-block;
     vertical-align: middle;
 }
-.navigation.posts-navigation svg.icon-left, 
+.navigation.posts-navigation svg.icon-left,
 .navigation.post-navigation svg.icon-left {
 	margin-right: 20px;
 }
-.navigation.posts-navigation svg.icon-right, 
+.navigation.posts-navigation svg.icon-right,
 .navigation.post-navigation svg.icon-right {
 	margin-left: 20px;
 }
@@ -2150,8 +2150,8 @@ nav.navigation.pagination {
     margin-bottom: 28px;
     font-weight: bold;
 }
-.single-post .site-main .comment-navigation, 
-.single-post .site-main .posts-navigation, 
+.single-post .site-main .comment-navigation,
+.single-post .site-main .posts-navigation,
 .single-post .site-main .post-navigation {
 	margin-bottom: 0;
 }
@@ -3050,7 +3050,7 @@ object {
 .featured-content-wrapper .entry-title a:focus {
 	opacity: 1;
 }
-.featured-content-wrapper .entry-content, 
+.featured-content-wrapper .entry-content,
 .featured-content-wrapper .entry-content p {
     color: #fff;
 }
@@ -3094,7 +3094,7 @@ object {
 .slick-dotted.slick-slider {
 	margin-bottom: 0;
 }
-.featured-slider .slick-prev:before, 
+.featured-slider .slick-prev:before,
 .featured-slider .slick-next:before {
 	-webkit-filter: brightness(0) invert(1);
     -moz-filter: brightness(0) invert(1);
@@ -3102,7 +3102,7 @@ object {
     -o-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1);
 }
-.slick-prev:before, 
+.slick-prev:before,
 .slick-next:before {
     content: "";
 	background-image: url('assets/uploads/right-arrow.svg');
@@ -3153,7 +3153,7 @@ object {
 .featured-slider .slick-next {
 	right: 50px;
 }
-.featured-slider .slick-prev, 
+.featured-slider .slick-prev,
 .featured-slider .slick-next {
     border: 1px solid #fff;
     background-color: transparent;
@@ -3262,7 +3262,7 @@ object {
     position: relative;
     height: 100%;
   }
-  
+
   %bv_hidden {
   	-webkit-backface-visibility: hidden;
   	backface-visibility: hidden;
@@ -3374,7 +3374,7 @@ object {
 #featured-videos .section-title,
 .photos-wrapper .entry-title a,
 .video-wrapper .entry-title,
-#featured-videos ul.post-categories li a:hover, 
+#featured-videos ul.post-categories li a:hover,
 #featured-videos ul.post-categories li a:focus {
     color: #fff;
 }
@@ -3692,7 +3692,7 @@ object {
     background-color: #242625;
     border-radius: 15px;
     margin-bottom: 25px;
-    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.3);
 }
 .destination-item-wrapper .overlay {
     opacity: 0;
@@ -3776,7 +3776,7 @@ object {
 .destination-item-wrapper .more-link:hover,
 .destination-item-wrapper .more-link:focus {
 	color: #00afe9;
-}	
+}
 .destination-item-wrapper .featured-image .more-link {
     width: 32px;
     height: 32px;
@@ -4200,7 +4200,7 @@ ul.tabs li:hover {
 .archive-blog-wrapper.col-4 article {
     padding: 0 15px;
     margin-bottom: 30px;
-} 
+}
 .archive-blog-wrapper .featured-image {
     background-size: cover;
     background-position: 50%;
@@ -4210,7 +4210,7 @@ ul.tabs li:hover {
     margin-bottom: 18px;
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.3);
 }
-.entry-meta a, 
+.entry-meta a,
 .entry-meta i {
     font-size: 16px;
     font-weight: 400;
@@ -4305,7 +4305,7 @@ ul.tabs li:hover {
     margin-top: 0;
     margin-bottom: 15px;
 }
-#discover-places .entry-title a, 
+#discover-places .entry-title a,
 #discover-places .section-subtitle {
     color: #fff;
 }
@@ -4628,7 +4628,7 @@ ul.tabs li:hover {
     border-right: 3px solid transparent;
     border-left: 3px solid #ad2320;
 }
-.entry-meta .travel-info span, 
+.entry-meta .travel-info span,
 .entry-meta .category-list-items span {
 	font-size: 16px;
 }
@@ -4720,11 +4720,11 @@ ul.tabs li:hover {
 .wp-trave-price-range .ui-widget.ui-widget-content {
 	background-color: #dc1b10;
 }
-.wp-trave-price-range .ui-state-default, 
-.wp-trave-price-range .ui-widget-content .ui-state-default, 
-.wp-trave-price-range .ui-widget-header .ui-state-default, 
-.wp-trave-price-range .ui-button, 
-html .wp-trave-price-range .ui-button.ui-state-disabled:hover, 
+.wp-trave-price-range .ui-state-default,
+.wp-trave-price-range .ui-widget-content .ui-state-default,
+.wp-trave-price-range .ui-widget-header .ui-state-default,
+.wp-trave-price-range .ui-button,
+html .wp-trave-price-range .ui-button.ui-state-disabled:hover,
 html .wp-trave-price-range .ui-button.ui-state-disabled:active {
 	background-color: #dc1b10;
 	border-color: #dc1b10;
@@ -4824,7 +4824,7 @@ ul.availabily-list .availabily-content .btn:focus {
 .resp-tab-content #respond {
     margin-top: 0;
 }
-.resp-tab-content .wp-tab-review-inner-wrapper .wp-travel-noreviews, 
+.resp-tab-content .wp-tab-review-inner-wrapper .wp-travel-noreviews,
 .resp-tab-content .wp-tab-review-inner-wrapper .wp-travel-norgallery {
     text-align: left;
 }
@@ -4853,7 +4853,7 @@ h2.resp-tab-active,
 h2.resp-accordion {
     background-color: #fff;
 }
-#secondary .wp-travel-itinerary-items .wp-travel-post-wrap-bg .trip-price ins span, 
+#secondary .wp-travel-itinerary-items .wp-travel-post-wrap-bg .trip-price ins span,
 #colophon .wp-travel-itinerary-items .wp-travel-post-wrap-bg .trip-price ins span {
     font-size: 15px;
 }
@@ -4949,9 +4949,9 @@ h2.resp-accordion {
     margin-bottom: 0;
     top: -10px;
 }
-#secondary .widget_wp_travel_search input, 
+#secondary .widget_wp_travel_search input,
 #secondary .widget_wp_travel_search select,
-#colophon .widget_wp_travel_search input, 
+#colophon .widget_wp_travel_search input,
 #colophon .widget_wp_travel_search select {
     width: 100%;
     max-width: 100%;
@@ -4983,7 +4983,7 @@ h2.resp-accordion {
 }
 #secondary .wp-travel-booking-wrapper {
     margin: 0;
-} 
+}
 #secondary .wp-travel-trip-meta-info li,
 #colophon .wp-travel-trip-meta-info li {
     display: block;
@@ -5054,8 +5054,8 @@ h2.resp-accordion {
 	background-color: #000;
 }
 .single-itineraries #respond textarea,
-.single-itineraries #respond input[type="text"], 
-.single-itineraries #respond input[type="email"], 
+.single-itineraries #respond input[type="text"],
+.single-itineraries #respond input[type="email"],
 .single-itineraries #respond input[type="url"] {
 	background-color: #f5f5f5;
 }
@@ -5100,11 +5100,11 @@ h2.resp-accordion {
     background-position: 50%;
     position: relative;
 }
-.header-gallery .featured-image:nth-child(1), 
+.header-gallery .featured-image:nth-child(1),
 .header-gallery .featured-image:nth-child(4) {
     padding: 200px 0;
 }
-.header-gallery .featured-image:nth-child(2), 
+.header-gallery .featured-image:nth-child(2),
 .header-gallery .featured-image:nth-child(3) {
     border-left: 5px solid #fff;
     border-right: 5px solid #fff;
@@ -5218,10 +5218,10 @@ h2.resp-accordion {
     border-radius: 5px;
     background-color: #1c0d69;
 }
-.ws-theme-cart-page .coupon input[type="submit"], 
-.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type="submit"], 
-.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon select[type="submit"], 
-.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[type="submit"], 
+.ws-theme-cart-page .coupon input[type="submit"],
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field select[type="submit"],
+.wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon select[type="submit"],
+.ws-theme-cart-page .coupon .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field textarea[type="submit"],
 .wp-travel-tab-wrapper .wp-travel-booking-form-wrapper form .wp-travel-form-field .ws-theme-cart-page .coupon textarea[type="submit"] {
     padding: 6px 19px;
     border: none;
@@ -5277,11 +5277,11 @@ table.ws-theme-cart-list.table-total-info {
 .single-wrapper .entry-meta span.cat-links svg {
     margin-right: 7px;
 }
-.single-wrapper .entry-meta span.posted-on, 
+.single-wrapper .entry-meta span.posted-on,
 .single-wrapper .entry-meta span.posted-on a {
 	color: #82868b;
 }
-.single-wrapper .entry-meta span a:hover, 
+.single-wrapper .entry-meta span a:hover,
 .single-wrapper .entry-meta span a:focus,
 .single-wrapper .cat-links a,
 .single-wrapper .entry-meta span.byline a.fn:hover,
@@ -5304,7 +5304,7 @@ table.ws-theme-cart-list.table-total-info {
     display: inline-block;
     width: 100%;
 }
-.single-wrapper .entry-meta a, 
+.single-wrapper .entry-meta a,
 .single-wrapper .entry-meta i {
 	font-size: 16px;
 	font-weight: 400;
@@ -5378,7 +5378,7 @@ ul.post-categories li a:focus {
 #colophon a:focus {
     color: #fff;
 }
-#colophon .widget-title, 
+#colophon .widget-title,
 #colophon .widgettitle {
     font-size: 20px;
     margin-bottom: 16px;
@@ -5643,7 +5643,7 @@ ul.post-categories li a:focus {
 }
 
 /*--------------------------------------------------------------
-# Dark Version 
+# Dark Version
 --------------------------------------------------------------*/
 .dark-version,
 body:not(.home).dark-version,
@@ -5657,28 +5657,28 @@ body:not(.home).dark-version,
 .dark-version .post-item-wrapper,
 .dark-version #secondary .widget,
 .dark-version .single-wrapper > article,
-.dark-version .navigation.post-navigation, 
+.dark-version .navigation.post-navigation,
 .dark-version .navigation.posts-navigation,
 .dark-version .wp-travel-toolbar,
 .dark-version .wp-travel-default-article,
-.dark-version.single #secondary .trip-short-desc, 
-.dark-version.single #colophon .trip-short-desc, 
-.dark-version.single #secondary .wp-travel-trip-meta-info, 
-.dark-version.single #colophon .wp-travel-trip-meta-info, 
-.dark-version.single #secondary .wp-detail-review-wrap, 
-.dark-version.single #secondary .booking-form, 
-.dark-version.single #secondary .wp-travel-map, 
-.dark-version.single #secondary .wp-travel-keywords, 
+.dark-version.single #secondary .trip-short-desc,
+.dark-version.single #colophon .trip-short-desc,
+.dark-version.single #secondary .wp-travel-trip-meta-info,
+.dark-version.single #colophon .wp-travel-trip-meta-info,
+.dark-version.single #secondary .wp-detail-review-wrap,
+.dark-version.single #secondary .booking-form,
+.dark-version.single #secondary .wp-travel-map,
+.dark-version.single #secondary .wp-travel-keywords,
 .dark-version.single #secondary .wp-travel-trip-code,
 .dark-version .resp-tab-content {
     background-color: #333;
     border-color: #333;
 }
-.dark-version h1, 
-.dark-version h2, 
-.dark-version h3, 
-.dark-version h4, 
-.dark-version h5, 
+.dark-version h1,
+.dark-version h2,
+.dark-version h3,
+.dark-version h4,
+.dark-version h5,
 .dark-version h6,
 .dark-version #destination-slider .entry-title a,
 .dark-version #our-services .entry-title a,
@@ -5697,7 +5697,7 @@ body:not(.home).dark-version,
 .dark-version .single-wrapper .entry-meta > span a,
 .dark-version .single-wrapper .entry-meta,
 .dark-version .single-wrapper .entry-content p,
-.dark-version .navigation.post-navigation a, 
+.dark-version .navigation.post-navigation a,
 .dark-version .navigation.posts-navigation a,
 .dark-version .logged-in-as,
 .dark-version .logged-in-as a,
@@ -5706,9 +5706,9 @@ body:not(.home).dark-version,
 .dark-version .wp-travel-post-filter.clearfix p,
 .dark-version .wp-travel-entry-content-wrapper p,
 .dark-version .description-left .entry-meta .travel-info,
-.dark-version .description-right .travel-info span, 
+.dark-version .description-right .travel-info span,
 .dark-version .description-left .entry-meta .travel-info span.group-size,
-.dark-version b, 
+.dark-version b,
 .dark-version strong,
 .dark-version .wp-travel-tab-wrapper .tab-list.resp-tabs-list li.resp-tab-active,
 .dark-version .resp-tab-content p,
@@ -5718,10 +5718,10 @@ body:not(.home).dark-version,
 .dark-version .wp-travel-tab-wrapper .tab-list-content,
 .dark-version #destination-slider .section-subtitle a:hover,
 .dark-version #destination-slider .section-subtitle a:focus,
-.dark-version .comment-meta .url, 
+.dark-version .comment-meta .url,
 .dark-version .comment-meta .fn,
 .dark-version .single-wrapper article p,
-.dark-version .comment-metadata a, 
+.dark-version .comment-metadata a,
 .dark-version .comment-metadata a time {
 	color: #fff;
 	opacity: 1;
@@ -5742,9 +5742,9 @@ body:not(.home).dark-version,
 .dark-version #secondary a:focus,
 .dark-version .single-wrapper .entry-meta > span a:hover,
 .dark-version .single-wrapper .entry-meta > span a:focus,
-.dark-version .navigation.post-navigation a:hover, 
+.dark-version .navigation.post-navigation a:hover,
 .dark-version .navigation.posts-navigation a:hover,
-.dark-version .navigation.post-navigation a:focus, 
+.dark-version .navigation.post-navigation a:focus,
 .dark-version .navigation.posts-navigation a:focus,
 .dark-version .logged-in-as a:hover,
 .dark-version .logged-in-as a:focus,
@@ -5756,11 +5756,11 @@ body:not(.home).dark-version,
 	opacity: 0.8;
 	color: #fff;
 }
-.dark-version .navigation.posts-navigation svg, 
+.dark-version .navigation.posts-navigation svg,
 .dark-version .navigation.post-navigation svg,
-.dark-version .navigation.post-navigation a:hover svg, 
-.dark-version .navigation.posts-navigation a:hover svg, 
-.dark-version .navigation.post-navigation a:focus svg, 
+.dark-version .navigation.post-navigation a:hover svg,
+.dark-version .navigation.posts-navigation a:hover svg,
+.dark-version .navigation.post-navigation a:focus svg,
 .dark-version .navigation.posts-navigation a:focus svg {
 	fill: #fff;
 }
@@ -5770,7 +5770,7 @@ body:not(.home).dark-version,
 .dark-version .comment-content:before {
 	border-right-color: #333;
 }
-.dark-version .wp-travel-default-article .wp-travel-entry-content-wrapper .description-right .trip-price, 
+.dark-version .wp-travel-default-article .wp-travel-entry-content-wrapper .description-right .trip-price,
 .dark-version .wp-travel-itinerary-items .wp-travel-post-wrap-bg .trip-price,
 .dark-version .wp-travel-tab-wrapper .tab-list.resp-tabs-list li {
     border-bottom-color: rgba(255, 255, 255, 0.20);
@@ -5797,12 +5797,12 @@ body:not(.home).dark-version,
 .dark-version .wp-travel-related-posts:before,
 .dark-version .wp-travel-itinerary-items ul.wp-travel-itinerary-list li,
 .dark-version .wp-travel-tab-wrapper .tab-list.resp-tabs-list li.resp-tab-active,
-.dark-version #faq h4, 
-.dark-version .checkout-accordion h4, 
+.dark-version #faq h4,
+.dark-version .checkout-accordion h4,
 .dark-version .global-faq-shortcode h4,
-.dark-version #secondary .widget_wp_travel_filter_search_widget input[type="text"], 
-.dark-version #secondary .widget_wp_travel_filter_search_widget select, 
-.dark-version #secondary .widget_wp_travel_search input[type="text"], 
+.dark-version #secondary .widget_wp_travel_filter_search_widget input[type="text"],
+.dark-version #secondary .widget_wp_travel_filter_search_widget select,
+.dark-version #secondary .widget_wp_travel_search input[type="text"],
 .dark-version #secondary .widget_wp_travel_search select {
 	background-color: #222;
 }
@@ -5812,22 +5812,22 @@ body:not(.home).dark-version,
 .dark-version .widget_wp_travel_filter_search_widget .trip-duration-calender .calender-icon,
 .dark-version .wp-travel-navigation.wp-paging-navigation a.wp-page-numbers,
 .dark-version .wp-tab-review-inner-wrapper .commentlist li,
-.dark-version #faq .panel-default, 
-.dark-version .checkout-accordion .panel-default, 
+.dark-version #faq .panel-default,
+.dark-version .checkout-accordion .panel-default,
 .dark-version .global-faq-shortcode .panel-default,
-.dark-version #faq h4:hover, 
-.dark-version .checkout-accordion h4:hover, 
+.dark-version #faq h4:hover,
+.dark-version .checkout-accordion h4:hover,
 .dark-version .global-faq-shortcode h4:hover,
 .dark-version .ws-theme-cart-page,
-.dark-version .checkout-page-wrap .checkout-block, 
+.dark-version .checkout-page-wrap .checkout-block,
 .dark-version .wp-travel-enquiries-form .checkout-block,
 .dark-version .wp-travel-toolbar,
 .dark-version .resp-vtabs .resp-tabs-container,
-.dark-version #secondary .widget_wp_travel_filter_search_widget .wp-travel-itinerary-items, 
-.dark-version #secondary .widget_wp_travel_search div.wp-travel-search, 
-.dark-version #secondary .widget_wp_travel_location ul, 
-.dark-version #secondary .widget_wp_travel_trip_type ul, 
-.dark-version #secondary .widget_wp_travel_featured .wp-travel-itinerary-items, 
+.dark-version #secondary .widget_wp_travel_filter_search_widget .wp-travel-itinerary-items,
+.dark-version #secondary .widget_wp_travel_search div.wp-travel-search,
+.dark-version #secondary .widget_wp_travel_location ul,
+.dark-version #secondary .widget_wp_travel_trip_type ul,
+.dark-version #secondary .widget_wp_travel_featured .wp-travel-itinerary-items,
 .dark-version #secondary .widget_wp_travel_sale_itineraries ul {
     background-color: #333;
 }
@@ -5841,25 +5841,25 @@ body:not(.home).dark-version,
     background-color: rgba(255, 255, 255, 0.10);
 }
 
-.dark-version .description-left .entry-title a, 
+.dark-version .description-left .entry-title a,
 .dark-version .item_cart a,
 .dark-version .trip-price .person-count,
-.dark-version .wp-travel-entry-content-wrapper .travel-info .value, 
+.dark-version .wp-travel-entry-content-wrapper .travel-info .value,
 .dark-version .description-left .entry-meta a,
-.dark-version #secondary .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a, 
+.dark-version #secondary .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a,
 .dark-version #colophon .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a,
 .dark-version .wp-travel-itinerary-items .wp-travel-post-wrap-bg .trip-price ins,
 .dark-version .wp-travel-navigation.wp-paging-navigation a.wp-page-numbers,
 .dark-version .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a,
-.dark-version .entry-meta i.wt-icon-caret-down, 
+.dark-version .entry-meta i.wt-icon-caret-down,
 .dark-version .status-publish .entry-content .category-list-items a,
 .dark-version .wp-travel-tab-wrapper .tab-list.resp-tabs-list li,
-.dark-version #faq .panel-heading [data-toggle=collapse], 
-.dark-version .checkout-accordion .panel-heading [data-toggle=collapse], 
+.dark-version #faq .panel-heading [data-toggle=collapse],
+.dark-version .checkout-accordion .panel-heading [data-toggle=collapse],
 .dark-version .global-faq-shortcode .panel-heading [data-toggle=collapse],
-.dark-version #faq h4 a, 
-.dark-version .global-faq-shortcode h4 a, 
-.dark-version #faq .panel-heading [data-toggle=collapse].collapsed, 
+.dark-version #faq h4 a,
+.dark-version .global-faq-shortcode h4 a,
+.dark-version #faq .panel-heading [data-toggle=collapse].collapsed,
 .dark-version .global-faq-shortcode .panel-heading [data-toggle=collapse].collapsed,
 .dark-version ul.availabily-list .availabily-heading,
 .dark-version .ws-theme-cart-page .ws-theme-cart-list thead tr th,
@@ -5872,13 +5872,13 @@ body:not(.home).dark-version,
 	color: #fff;
 }
 
-.dark-version .description-left .entry-title a:hover, 
+.dark-version .description-left .entry-title a:hover,
 .dark-version .item_cart a:hover,
-.dark-version .description-left .entry-title a:focus, 
+.dark-version .description-left .entry-title a:focus,
 .dark-version .item_cart a:focus,
-.dark-version #secondary .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:hover, 
+.dark-version #secondary .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:hover,
 .dark-version #colophon .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:hover,
-.dark-version #secondary .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:focus, 
+.dark-version #secondary .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:focus,
 .dark-version #colophon .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:focus,
 .dark-version .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:hover,
 .dark-version .wp-travel-itinerary-items .wp-travel-post-item-wrapper .post-title a:focus,
@@ -5890,7 +5890,7 @@ body:not(.home).dark-version,
 
 .dark-version .wp-travel-toolbar,
 .dark-version .wp-travel-default-article,
-.dark-version .checkout-page-wrap .checkout-block, 
+.dark-version .checkout-page-wrap .checkout-block,
 .dark-version .wp-travel-enquiries-form .checkout-block,
 .dark-version .wp-travel-itinerary-items ul.wp-travel-itinerary-list li {
     border: none;
@@ -6017,7 +6017,7 @@ body:not(.home).dark-version,
 	#comments ol.children {
 	    padding-left: 110px;
 	}
-	.right-sidebar #secondary, 
+	.right-sidebar #secondary,
 	.left-sidebar #secondary {
 		margin-top: 50px;
 	}
@@ -6177,13 +6177,13 @@ body:not(.home).dark-version,
 	    font-size: 14px;
 	    font-weight: 400;
 	}
-	.comment-navigation .nav-previous, 
-	.posts-navigation .nav-previous, 
+	.comment-navigation .nav-previous,
+	.posts-navigation .nav-previous,
 	.post-navigation .nav-previous {
 	    padding-right: 25px;
 	}
-	.comment-navigation .nav-next, 
-	.posts-navigation .nav-next, 
+	.comment-navigation .nav-next,
+	.posts-navigation .nav-next,
 	.post-navigation .nav-next {
 		padding-left: 25px;
 	}
@@ -6329,7 +6329,7 @@ body:not(.home).dark-version,
 	.dark-version .gallery-slider .slick-arrow {
 		border-color: #fff;
 	}
-	.dark-version .gallery-slider .slick-prev:before, 
+	.dark-version .gallery-slider .slick-prev:before,
 	.dark-version .gallery-slider .slick-next:before {
 		-webkit-filter: brightness(0) invert(1);
 	    -moz-filter: brightness(0) invert(1);
@@ -6440,12 +6440,12 @@ body:not(.home).dark-version,
 	.header-gallery .featured-image {
 		padding: 125px 0;
 	}
-	.header-gallery .featured-image:nth-child(1), 
+	.header-gallery .featured-image:nth-child(1),
 	.header-gallery .featured-image:nth-child(4) {
 	    padding: 250px 0;
 	}
-	.comment-form-author, 
-	.comment-form-email, 
+	.comment-form-author,
+	.comment-form-email,
 	.comment-form-url {
 	    width: 33.33%;
 	    float: left;
@@ -6594,7 +6594,7 @@ body:not(.home).dark-version,
 	}
 	.main-navigation ul#primary-menu > li.menu-item-has-children:hover > a:after {
 		display: none;
-	}	
+	}
 	#masthead .main-navigation ul ul li a svg {
 	    display: inline-block;
 	    top: 17px;
@@ -6610,13 +6610,13 @@ body:not(.home).dark-version,
 	    color: #fff;
 	}
 	.main-navigation ul ul {
-	    background-color: #111;	
+	    background-color: #111;
 	}
 	.main-navigation ul ul li {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	.main-navigation ul ul li.menu-item-has-children:hover > a > svg, 
+	.main-navigation ul ul li.menu-item-has-children:hover > a > svg,
 	.main-navigation ul ul li.menu-item-has-children > a:hover > svg {
 		fill: #fff;
 	}
@@ -6838,7 +6838,7 @@ body:not(.home).dark-version,
     	float: right;
     	margin-top: 0;
     }
-    .left-sidebar #primary { 
+    .left-sidebar #primary {
     	float: right;
     	padding-right: 0;
     	padding-left: 40px;
@@ -6921,7 +6921,7 @@ body:not(.home).dark-version,
 	#featured-videos .col-2 {
 		margin: 0 -85px;
 	}
-	#featured-videos .col-2 .video-wrapper, 
+	#featured-videos .col-2 .video-wrapper,
 	#featured-videos .col-2 .photos-wrapper {
 		padding: 0 85px;
 	}
@@ -6931,7 +6931,7 @@ body:not(.home).dark-version,
 	.featured-content-wrapper .entry-title {
 	    font-size: 150px;
 	}
-	.slick-prev, 
+	.slick-prev,
 	.slick-next {
 		width: 60px;
 		height: 60px;
@@ -6997,11 +6997,11 @@ body:not(.home).dark-version,
 	.header-gallery .featured-image {
 		padding: 159px 0;
 	}
-	.header-gallery .featured-image:nth-child(1), 
+	.header-gallery .featured-image:nth-child(1),
 	.header-gallery .featured-image:nth-child(4) {
 	    padding: 318px 0;
 	}
-	.slick-prev:before, 
+	.slick-prev:before,
 	.slick-next:before {
 	    width: 22px;
 	    height: 22px;
@@ -7021,7 +7021,7 @@ body:not(.home).dark-version,
 	.wp-travel-related-posts {
 		padding-top: 93px;
 	}
-	.left-sidebar .sticky-post-wrapper .entry-title, 
+	.left-sidebar .sticky-post-wrapper .entry-title,
 	.right-sidebar .sticky-post-wrapper .entry-title {
 	    font-size: 40px;
 	}
@@ -7084,8 +7084,8 @@ body:not(.home).dark-version,
 	.main-navigation ul ul a {
 	    width: 100%;
 	}
-	.main-navigation ul#primary-menu li.current-menu-item > a, 
-	.main-navigation ul#primary-menu li:hover > a, 
+	.main-navigation ul#primary-menu li.current-menu-item > a,
+	.main-navigation ul#primary-menu li:hover > a,
 	.main-navigation ul#primary-menu li:focus > a,
 	.main-navigation ul.nav-menu > li > a {
 		color: #242625;
@@ -7236,11 +7236,11 @@ body:not(.home).dark-version,
 		display: block;
 	}
 	.single-wrapper .entry-title,
-	.comments-title, 
+	.comments-title,
 	#reply-title {
 	    font-size: 28px;
 	}
-	.navigation.post-navigation a, 
+	.navigation.post-navigation a,
 	.navigation.posts-navigation a {
 		font-size: 18px;
 	}
@@ -7249,7 +7249,7 @@ body:not(.home).dark-version,
 	    max-width: 1200px;
 	    margin: 30px auto 0;
 	}
-	.wp-travel-trip-meta-info ul li:before, 
+	.wp-travel-trip-meta-info ul li:before,
 	.wp-travel-trip-meta-info ul li.no-border:before {
 		display: none;
 	}
@@ -7344,7 +7344,7 @@ body:not(.home).dark-version,
 	.slider-nav {
 		display: none;
 	}
-	.slick-prev, 
+	.slick-prev,
 	.slick-next {
 		width: 40px;
 		height: 40px;
@@ -7368,17 +7368,17 @@ body:not(.home).dark-version,
 	ul.availabily-list li.availabily-heading {
 		display: none;
 	}
-	.comment-navigation .nav-previous, 
-	.posts-navigation .nav-previous, 
+	.comment-navigation .nav-previous,
+	.posts-navigation .nav-previous,
 	.post-navigation .nav-previous,
-	.comment-navigation .nav-next, 
-	.posts-navigation .nav-next, 
+	.comment-navigation .nav-next,
+	.posts-navigation .nav-next,
 	.post-navigation .nav-next {
 		width: 100%;
 	}
-	.post-navigation span.previous-article b, 
-	.post-navigations span.previous-article b, 
-	.post-navigation span.next-article b, 
+	.post-navigation span.previous-article b,
+	.post-navigations span.previous-article b,
+	.post-navigation span.next-article b,
 	.post-navigations span.next-article b {
 		font-size: 18px;
 	}
@@ -7389,7 +7389,7 @@ body:not(.home).dark-version,
 	.pagination .page-numbers.next {
 		margin-bottom: 7px;
 	}
-	.navigation.post-navigation a, 
+	.navigation.post-navigation a,
 	.navigation.posts-navigation a {
 		font-size: 16px;
 	}
@@ -7405,7 +7405,7 @@ body:not(.home).dark-version,
 		margin-top: 30px;
 	}
 	.single-wrapper .entry-title,
-	.comments-title, 
+	.comments-title,
 	#reply-title {
 	    font-size: 26px;
 	}
@@ -7415,11 +7415,11 @@ body:not(.home).dark-version,
 	.tags-links {
 	    margin-bottom: 25px;
 	}
-	.navigation.post-navigation .nav-previous + .nav-next, 
+	.navigation.post-navigation .nav-previous + .nav-next,
 	.navigation.posts-navigation .nav-previous + .nav-next {
 		padding-top: 0;
 	}
-	.navigation.post-navigation .nav-previous + .nav-next svg, 
+	.navigation.post-navigation .nav-previous + .nav-next svg,
 	.navigation.posts-navigation .nav-previous + .nav-next svg {
 		top: 10px;
 	}
@@ -7489,7 +7489,7 @@ body:not(.home).dark-version,
 		opacity: 0;
 		visibility: hidden;
 	}
-	.wp-travel-filter p, 
+	.wp-travel-filter p,
 	.wp-travel-search p.wp-travel-search {
 	    width: 100%;
 	    text-align: left;
@@ -7521,17 +7521,17 @@ body:not(.home).dark-version,
 	#page-site-header .page-title {
 		font-size: 32px;
 	}
-	.pagination .page-numbers.prev, 
+	.pagination .page-numbers.prev,
 	.pagination .page-numbers.next {
 		top: 0;
 	}
-	.pagination .prev.page-numbers:before, 
+	.pagination .prev.page-numbers:before,
 	.pagination .next.page-numbers:before {
 		width: 35px;
 		height: 10px;
 	}
-	.site-main .comment-navigation, 
-	.site-main .posts-navigation, 
+	.site-main .comment-navigation,
+	.site-main .posts-navigation,
 	.site-main .post-navigation {
 		margin-top: 25px;
 	}
@@ -7854,7 +7854,7 @@ body:not(.home).dark-version,
 .facetwp-radio.checked,
 .facetwp-radio:hover {
     background-color: #1c0d69;
-    color: #fff;    
+    color: #fff;
 }
 
 
