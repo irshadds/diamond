@@ -104,7 +104,7 @@ if ( ! function_exists( 'travel_master_render_about_section' ) ) :
 
                         <div class="entry-container">
                             <header class="entry-header">
-                                <h2 class="entry-title"><?php echo esc_html( $content['title'] ); ?></h2>
+                                <h2 class="section-title"><?php echo esc_html( $content['title'] ); ?></h2>
                             </header>
 
                             <div class="entry-content">
