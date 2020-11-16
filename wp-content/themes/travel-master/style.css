@@ -3305,33 +3305,33 @@ object {
 
 /* Chamath - slider fixed height */
 @media only screen and (max-width: 1023px) {
-	body.home .slick-list {
+	body.home #featured-slider-section .slick-list {
 		background: black;
 	}
 
-	body.home .slick-track {
+	body.home #featured-slider-section .slick-track {
 		height: 100%;
 	}
 
-	body.home .slick-list article {
+	body.home #featured-slider-section .slick-list article {
 		height: 100%;
 	}
 }
 
 @media only screen and (min-width: 1px) and (max-width: 566px) {
-	body.home .slick-list {
+	body.home #featured-slider-section .slick-list {
 		height: 450px !important;
 	}
 }
 
 @media only screen and (min-width: 567px) and (max-width: 991px) {
-	body.home .slick-list {
+	body.home #featured-slider-section .slick-list {
 		height: 600px !important;
 	}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
-	body.home .slick-list {
+	body.home #featured-slider-section .slick-list {
 		height: 650px !important;
 	}
 }
