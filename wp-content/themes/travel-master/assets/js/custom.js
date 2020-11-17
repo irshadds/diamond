@@ -253,7 +253,7 @@ $(window).on("resize.slickVideoPlayer", function(){
 
 
 $('.carousel').slick({
-    slidesToShow: 3,
+    slidesToShow: 5,
     arrows:false,
     dots:true,
     infinite:true,
@@ -263,7 +263,9 @@ $('.carousel').slick({
     responsive: [{
         breakpoint: 1200,
             settings: {
-            slidesToShow: 3,
+            slidesToShow: 5,
+            centerMode : true, 
+            
             infinite:true,
             slidesToScroll: 1,
             autoplay: true,
@@ -277,11 +279,13 @@ $('.carousel').slick({
         settings: {
             slidesToShow: 1,
             centerMode : true, 
-            variableWidth: true
+            variableWidth: true,
+            dots:false
             
         }
     }]
 });
+
 
 
 
