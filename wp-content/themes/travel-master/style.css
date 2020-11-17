@@ -2441,6 +2441,11 @@ section {
 .page-section {
     padding: 60px 0;
 }
+
+.page-f-section {
+    padding: 40px 0;
+}
+
 .header-image-disabled.menu-sticky #inner-content-wrapper {
     margin-top: 60px;
 }
@@ -3583,7 +3588,10 @@ object {
     background-color: #242625;
     border-radius: 15px;
     position: relative;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-right: 0px;
+    padding-bottom: 72px;
+    padding-left: 0px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -7336,6 +7344,7 @@ body:not(.home).dark-version,
 	#masthead.site-header .main-navigation ul.nav-menu {
 		max-width: 100%;
 	}
+
 	.featured-content-wrapper {
 		text-align: center;
 	}

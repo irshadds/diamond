@@ -133,7 +133,7 @@ if ( ! function_exists( 'travel_master_render_featured_section' ) ) :
             return;
         } ?>
 
-        <div id="featured-destinations" class="relative page-section">
+        <div id="featured-destinations" class="relative page-f-section">
             <div class="wrapper">
                 <div class="carousel section-content clear">
                     <?php foreach ( $content_details as $content ) : ?>
