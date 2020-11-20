@@ -463,23 +463,23 @@ function my_taxonomies_product() {
 add_action( 'init', 'my_taxonomies_product', 0 );
 
 
-function custom_brand_type() {
+function custom_product() {
  
 // Set UI labels for Custom Post Type
     $labels = array(
-        'name'               => _x( 'Brands', 'post type general name' ),
-	    'singular_name'      => _x( 'Brands', 'post type singular name' ),
-	    'add_new'            => _x( 'Add New', 'brand' ),
-	    'add_new_item'       => __( 'Add New Brand' ),
-	    'edit_item'          => __( 'Edit Brand' ),
-	    'new_item'           => __( 'New Brand' ),
-	    'all_items'          => __( 'All Brands' ),
-	    'view_item'          => __( 'View Brand' ),
-	    'search_items'       => __( 'Search Brands' ),
-	    'not_found'          => __( 'No Brands found' ),
-	    'not_found_in_trash' => __( 'No Brands found in the Trash' ), 
+        'name'               => _x( 'Products', 'post type general name' ),
+	    'singular_name'      => _x( 'Product', 'post type singular name' ),
+	    'add_new'            => _x( 'Add New', 'Product' ),
+	    'add_new_item'       => __( 'Add New Product' ),
+	    'edit_item'          => __( 'Edit Product' ),
+	    'new_item'           => __( 'New Product' ),
+	    'all_items'          => __( 'All Products' ),
+	    'view_item'          => __( 'View Product' ),
+	    'search_items'       => __( 'Search Products' ),
+	    'not_found'          => __( 'No Products found' ),
+	    'not_found_in_trash' => __( 'No Products found in the Trash' ), 
 	    'parent_item_colon'  => '',
-	    'menu_name'          => 'Brands'
+	    'menu_name'          => 'Products'
     );
      
 // Set other options for Custom Post Type
@@ -487,7 +487,7 @@ function custom_brand_type() {
     $args = array(
      
 	    'labels'        => $labels,
-	    'description'   => 'Holds our brand and brand specific data',
+	    'description'   => 'Holds our Product and Product specific data',
 	    'public'        => true,
 	    'menu_position' => 5,
 	    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
@@ -496,57 +496,34 @@ function custom_brand_type() {
     );
      
     // Registering your Custom Post Type
-    register_post_type( 'brand', $args );
+    register_post_type( 'product', $args );
  
 }
 
-add_action( 'init', 'custom_brand_type', 0 );
+add_action( 'init', 'custom_product', 0 );
 
 
 function my_taxonomies_brand() {
   $labels = array(
-    'name'              => _x( 'Product', 'taxonomy general name' ),
-    'singular_name'     => _x( 'Product', 'taxonomy singular name' ),
-    'search_items'      => __( 'Search Product' ),
-    'all_items'         => __( 'All Product' ),
-    'parent_item'       => __( 'Parent Product' ),
-    'parent_item_colon' => __( 'Parent Product :' ),
-    'edit_item'         => __( 'Edit Product' ), 
-    'update_item'       => __( 'Update Product' ),
-    'add_new_item'      => __( 'Add New Product' ),
-    'new_item_name'     => __( 'New Product' ),
-    'menu_name'         => __( 'Product' ),
+    'name'              => _x( 'Brands', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Brand', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Brands' ),
+    'all_items'         => __( 'All Brands' ),
+    'parent_item'       => __( 'Parent Brand' ),
+    'parent_item_colon' => __( 'Parent Brand :' ),
+    'edit_item'         => __( 'Edit Brand' ), 
+    'update_item'       => __( 'Update Brand' ),
+    'add_new_item'      => __( 'Add New Brand' ),
+    'new_item_name'     => __( 'New Brand' ),
+    'menu_name'         => __( 'Brands' ),
   );
   $args = array(
     'labels' => $labels,
     'hierarchical' => true,
   );
-  register_taxonomy( 'brand_product', 'brand', $args );
+  register_taxonomy( 'product_brand', 'product', $args );
 }
 add_action( 'init', 'my_taxonomies_brand', 0 );
-
-
-function my_taxonomies_brand_type() {
-  $labels = array(
-    'name'              => _x( 'Brand Type', 'taxonomy general name' ),
-    'singular_name'     => _x( 'Brand Type', 'taxonomy singular name' ),
-    'search_items'      => __( 'Search Brand Type' ),
-    'all_items'         => __( 'All Brand Types' ),
-    'parent_item'       => __( 'Parent Brand Type' ),
-    'parent_item_colon' => __( 'Parent Brand Type :' ),
-    'edit_item'         => __( 'Edit Brand Type' ), 
-    'update_item'       => __( 'Update Brand Type' ),
-    'add_new_item'      => __( 'Add New Brand Type' ),
-    'new_item_name'     => __( 'New Brand Type' ),
-    'menu_name'         => __( 'Brand Type' ),
-  );
-  $args = array(
-    'labels' => $labels,
-    'hierarchical' => true,
-  );
-  register_taxonomy( 'brand_type', 'brand', $args );
-}
-add_action( 'init', 'my_taxonomies_brand_type', 0 );
 
 
 

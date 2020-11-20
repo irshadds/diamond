@@ -48,6 +48,9 @@ if ( ! function_exists( 'travel_master_get_featured_section_details' ) ) :
         // Content type.
         $featured_content_type  = $options['featured_content_type'];
         $content = array();
+
+        
+
         switch ( $featured_content_type ) {
         	
             case 'page':
@@ -59,8 +62,8 @@ if ( ! function_exists( 'travel_master_get_featured_section_details' ) ) :
                 }
                 
                 $args = array(
-                    'post_type'         => 'recipes',
-                    'recipes_category'  => 'featured',
+                    'post_type'         => 'product',
+                    'brand_type'        => 'featured',
                     'post__in'          => ( array ) $page_ids,
                     'posts_per_page'    => 11,
                     'orderby'           => 'post__in',
@@ -133,10 +136,30 @@ if ( ! function_exists( 'travel_master_render_featured_section' ) ) :
             return;
         } ?>
 
+        <?php  
+        $args = array(
+                'taxonomy' => 'product_brand',
+                'hide_empty' => false
+        );
+        $taxonomies = get_terms($args);
+
+        
+        $contents = array();
+        
+        foreach ($taxonomies as $taxonomy) {
+                    $page_post['id']        = $taxonomy->term_id;
+                    $page_post['title']     = $taxonomy->name;
+                    $page_post['url']       = get_term_link( $taxonomy);
+                    $page_post['image']     = get_field('brand_image',$taxonomy);
+            array_push( $contents, $page_post );
+        }
+        
+        ?>
+
         <div id="featured-destinations" class="relative page-f-section">
             <div class="wrapper">
                 <div class="carousel section-content clear">
-                    <?php foreach ( $content_details as $content ) : ?>
+                    <?php foreach ( $contents as $content ) : ?>
                         <article class="carousel-item">
                             <div class="featured-image" style="background-image: url('<?php echo esc_url( $content['image'] ); ?>');">
                                 <?php if ( ! in_array( $featured_content_type, array( 'category', 'page', 'post' ) ) ) : 
