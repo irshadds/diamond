@@ -973,7 +973,7 @@ a:active {
     position: relative;
     width: 100%;
     z-index: 3000;
-    background-color: RGBA(247,245,231,.65) !important;
+    background-color: RGBA(247,245,231,.85) !important;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -3237,6 +3237,7 @@ object {
     display: block;
 }
 
+
 .slick-slide {
   position: relative;
   height: 38vw;
@@ -3632,15 +3633,27 @@ object {
 }
 #featured-destinations .featured-image:before {
     content: "";
-    background-color: #000;
+   	background-color: #000;
     border-radius: 15px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3;
+    opacity: 0;
 }
+
+#featured-destinations .featured-image:hover{
+
+	opacity: 0.8;
+
+}
+#featured-destinations .slick-slide {
+	
+    margin-top: 18px;
+
+}
+
 #featured-destinations .section-content {
     margin: 0 -15px;
 }
@@ -3688,7 +3701,7 @@ object {
 #featured-destinations .entry-title a,
 #featured-destinations .entry-header span a,
 #featured-destinations .more-link {
-	color: #1c0d69;
+	color: #fff;
 }
 #featured-destinations .entry-title a:hover,
 #featured-destinations .entry-title a:focus,
@@ -6800,7 +6813,7 @@ body:not(.home).dark-version,
 	    margin-top: 100px;
 	}
 	#featured-destinations .visible-title {
-		display: block;
+		display: none;
 	    position: absolute;
 	    z-index: 1;
 	    left: 0;
@@ -6813,7 +6826,9 @@ body:not(.home).dark-version,
 	    transform: translateY(-50%);
 	}
 	#featured-destinations .featured-image:hover .visible-title {
-		display: none;
+		opacity: 1;
+		display: block;
+
 	}
 	#featured-destinations .entry-header,
 	#featured-destinations .price-wrapper {
@@ -6828,7 +6843,7 @@ body:not(.home).dark-version,
 	#featured-destinations .featured-image:hover .entry-header,
 	#featured-destinations .featured-image:hover .price-wrapper {
 		opacity: 1;
-		visibility: visible;
+		visibility: hidden;
 	}
 	#featured-destinations .featured-image:hover {
 	    -webkit-transform: scale(1.18);

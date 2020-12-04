@@ -189,6 +189,10 @@ if ( ! function_exists( 'travel_master_render_featured_section' ) ) :
                                     <?php endif;
                                 endif; ?>
 
+                                <div class="visible-title">
+                                    <h2 class="entry-title"><a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h2>
+                                </div><!-- .visible-title -->
+
                                 <header class="entry-header">
                                     <h2 class="entry-title"><a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h2>
                                     <?php if ( ! in_array( $featured_content_type, array( 'category', 'page', 'post' ) ) ) : 
@@ -216,11 +220,8 @@ if ( ! function_exists( 'travel_master_render_featured_section' ) ) :
                                         </a>
                                     <?php endif; ?>
                                 </div><!-- .price-wrapper -->
-                                
                             </div><!-- .featured-image -->
-
                         </article>
-                       
                     <?php endforeach; ?>
                 </div><!-- .section-content -->
             </div><!-- .wrapper -->
