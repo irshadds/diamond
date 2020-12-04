@@ -3650,7 +3650,7 @@ object {
 }
 #featured-destinations .slick-slide {
 	
-    margin-top: 18px;
+    margin-top: 30px;
 
 }
 
@@ -3684,16 +3684,17 @@ object {
     border-right: 3px solid transparent;
 }
 #featured-destinations .entry-header {
-	width: 50%;
+	width: 100%;
     position: absolute;
-    left: 10px;
-    bottom: 10px;
-    text-align: left;
+    bottom: 162px;
+    text-align: center;
+    
 }
 #featured-destinations .entry-title {
-    margin: 0;
+    
     font-size: 20px;
     font-weight: 700;
+    margin-top: 230px
 }
 #featured-destinations .visible-title {
 	display: none;
@@ -7938,6 +7939,8 @@ body:not(.home).dark-version,
     width: 100%;
     margin: 0 0 1rem 0;
   }
+
+  
 }
 
 .ctis-load-more{

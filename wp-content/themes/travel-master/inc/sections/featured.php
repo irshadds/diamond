@@ -195,31 +195,7 @@ if ( ! function_exists( 'travel_master_render_featured_section' ) ) :
 
                                 <header class="entry-header">
                                     <h2 class="entry-title"><a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h2>
-                                    <?php if ( ! in_array( $featured_content_type, array( 'category', 'page', 'post' ) ) ) : 
-                                        $terms = wp_get_post_terms( $content['id'], 'travel_locations' );
-                                        ?>
-                                        <span>
-                                            <?php foreach ( $terms as $term ) : ?>
-                                                <a href="<?php echo esc_url( get_term_link( $term->term_id, 'travel_locations' ) ); ?>"><?php echo esc_html( $term->name ); ?></a>
-                                            <?php endforeach; ?>
-                                        </span>
-                                    <?php endif; ?>
                                 </header>   
-
-                                <div class="price-wrapper">
-                                    <?php if ( ! in_array( $featured_content_type, array( 'category', 'page', 'post' ) ) ) : ?>
-                                        <span class="trip-price">                       
-                                            <?php echo wp_travel_get_formated_price_currency( $trip_price ); ?>
-                                        </span><!-- .trip-price -->
-                                    <?php endif; ?>
-
-                                    <?php if ( ! empty( $options['featured_read_more'] ) ) : ?>
-                                        <a href="<?php echo esc_url( $content['url'] ); ?>" class="more-link">
-                                            <span class="screen-reader-text"><?php echo esc_html( $content['title'] ); ?></span>
-                                            <?php echo esc_html( $options['featured_read_more'] ); ?>
-                                        </a>
-                                    <?php endif; ?>
-                                </div><!-- .price-wrapper -->
                             </div><!-- .featured-image -->
                         </article>
                     <?php endforeach; ?>
