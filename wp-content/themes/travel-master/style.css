@@ -7979,3 +7979,8 @@ body:not(.home).dark-version,
     top: -69px;
     z-index: 998;
 }
+
+/* make contact form fields full-width */
+.wpcf7-form label {
+	width: 100%;
+}
