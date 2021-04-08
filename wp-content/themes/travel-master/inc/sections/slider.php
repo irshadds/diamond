@@ -48,7 +48,7 @@ if ( ! function_exists( 'travel_master_get_slider_section_details' ) ) :
         $content = array();
         $page_ids = array();
 
-        for ( $i = 1; $i <= 5; $i++ ) {
+        for ( $i = 1; $i <= 10; $i++ ) {
             if ( ! empty( $options['slider_content_page_' . $i] ) )
                 $page_ids[] = $options['slider_content_page_' . $i];
         }
@@ -57,7 +57,7 @@ if ( ! function_exists( 'travel_master_get_slider_section_details' ) ) :
             'post_type'         => 'post',
             'post__in'          => ( array ) $page_ids,
             'category_name'     => 'hero-image',
-            'posts_per_page'    => 5,
+            'posts_per_page'    => 10,
             'orderby'           => 'post__in',
             );                    
 
