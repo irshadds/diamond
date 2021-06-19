@@ -14,6 +14,48 @@ $wp_customize->add_section( 'travel_master_archive_section', array(
 	'panel'             => 'travel_master_theme_options_panel',
 ) );
 
+
+
+
+$wp_customize->add_setting( 'recipe_hero', array(
+        'default' => get_theme_file_uri('assets/uploads/header-image.jpg'), // Add Default Image URL 
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+ 
+$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'recipe_hero', array(
+        'label' => 'Upload Recipe Hero Image',
+        'priority' => 20,
+        'section' => 'travel_master_archive_section',
+        'settings' => 'recipe_hero',
+        'button_labels' => array(// All These labels are optional
+                    'select' => 'Select Image',
+                    'remove' => 'Remove Image',
+                    'change' => 'Change Image',
+                    )
+    )));
+
+
+$wp_customize->add_setting( 'blog_hero', array(
+        'default' => get_theme_file_uri('assets/uploads/header-image.jpg'), // Add Default Image URL 
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+ 
+$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'blog_hero', array(
+        'label' => 'Upload Blog Hero Image',
+        'priority' => 21,
+        'section' => 'travel_master_archive_section',
+        'settings' => 'blog_hero',
+        'button_labels' => array(// All These labels are optional
+                    'select' => 'Select Image',
+                    'remove' => 'Remove Image',
+                    'change' => 'Change Image',
+                    )
+    )));
+
+
+
+
+
 // Your latest posts title setting and control.
 $wp_customize->add_setting( 'travel_master_theme_options[your_latest_posts_title]', array(
 	'default'           => $options['your_latest_posts_title'],
@@ -63,3 +105,4 @@ $wp_customize->add_control( new Travel_Master_Switch_Control( $wp_customize, 'tr
 	'section'           => 'travel_master_archive_section',
 	'on_off_label' 		=> travel_master_hide_options(),
 ) ) );
+

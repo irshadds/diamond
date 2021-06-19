@@ -1739,7 +1739,7 @@ function get_the_archive_title() {
 	} elseif ((get_post_type() == "blogs")){
 		$original_title = "Blogs";
 		$prefix="";
-		$title="Blogs";
+		$title="Blog";
 	} elseif ((get_post_type() == "brand")){
 		$original_title = "Brands";
 		$prefix="";

@@ -249,7 +249,21 @@ if ( ! function_exists( 'travel_master_header_image' ) ) :
 		
 		if ( is_singular() && has_post_thumbnail() ) : 
 			$header_image = get_the_post_thumbnail_url( get_the_id(), 'full' );
-    	endif; ?>
+    	endif; 
+
+    	if ( is_archive() ) : 
+    		if (get_post_type() == "recipes") :
+				$header_image = get_theme_mod('recipe_hero');
+			endif;
+
+			if (get_post_type() == "blogs") :
+				$header_image = get_theme_mod('blog_hero');
+			endif;
+    	endif; 
+
+    	
+
+    	?>
 
     	<div id="page-site-header" class="relative <?php echo esc_attr( $class ); ?>" style="background-image: url('<?php echo esc_url( $header_image ); ?>');">
     		<?php if ( class_exists( 'WP_Travel' ) && is_singular( 'itineraries' ) ) : 
