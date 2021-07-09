@@ -256,7 +256,7 @@ $('.carousel').slick({
     slidesToShow: 5,
     arrows:false,
     dots:true,
-    infinite:true,
+    infinite:false,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -266,7 +266,7 @@ $('.carousel').slick({
             slidesToShow: 5,
             centerMode : true, 
             
-            infinite:true,
+            infinite:false,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -285,6 +285,8 @@ $('.carousel').slick({
         }
     }]
 });
+
+
 
 
 
